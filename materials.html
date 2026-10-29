@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>资源库 · 高级口译通关营</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner">
+  <a class="brand" href="index.html">高级口译 <span>通关营</span></a>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="exam.html">考试全解</a>
+    <a href="roadmap.html">路线图</a>
+    <a href="written.html">笔试训练</a>
+    <a href="oral.html">口试训练</a>
+    <a href="practice.html">训练台</a>
+    <a href="materials.html">资源库</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+  <h1>资源库：教材、真题、工具、素材</h1>
+  <p class="lead">2026 年 10 月全网核查的结果：官方教程五册 + 真题汇编是主线，GitHub 上没有现成的高口备考仓库（这站因此而生），但有几个好用的开源听写/跟读工具；每日听力素材由 GitHub Actions 自动更新在页尾。</p>
+</section>
+
+<p class="toc">本页：<a href="#books">官方教材</a> · <a href="#audio">音频渠道</a> · <a href="#github">GitHub 工具</a> · <a href="#sites">网站素材</a> · <a href="#posts">经验帖</a> · <a href="#feeds">每日更新</a></p>
+
+<h2 id="books">官方教材（上海外语教育出版社）</h2>
+<div class="table-wrap"><table>
+  <tr><th>教材</th><th>主编</th><th>对应考试部分</th><th>用法</th></tr>
+  <tr><td><b>《高级听力教程》</b>（第四版）</td><td>周国强</td><td>笔试单元 1 听力 + 单元 4 听译</td><td><b>主线教材，16 单元全做</b>：先盲做、再逐句听写、笔记符号固化。<b>历年真题常出教程原题</b>（尤其听译）——投入产出比最高的一本</td></tr>
+  <tr><td><b>《高级口译教程》</b>（第四版）</td><td>梅德明</td><td>口试口译 8 段（兼笔试听译语料）</td><td>口试核心：约 15 个主题单元（外事/旅游/教育/科技/经贸等），每单元课文按「视译 → 听译 → 录音复盘」过，主题与口试段落同源</td></tr>
+  <tr><td>《高级阅读教程》</td><td>—</td><td>笔试单元 2/5 阅读</td><td>选做一半以上文章，全部限时 10 分钟/篇，练定位与同义替换</td></tr>
+  <tr><td>《高级翻译教程》</td><td>—</td><td>笔试单元 3/6 笔译</td><td>对照法使用：自己译 → 对参考 → 抄「差异句」入复盘本</td></tr>
+  <tr><td>《高级口语教程》</td><td>—</td><td>口试 Talk</td><td>浏览话题即可，重点用 <a href="oral.html#talk">Talk 模板</a>自建 30 题提纲库</td></tr>
+  <tr><td><b>历年真题汇编（实考试卷）</b></td><td>—</td><td>全套</td><td><b>第二主线</b>：1 月一刷、2 月二刷、3 月每周 2 套，严格按 <a href="written.html#mock">模考节奏</a></td></tr>
+  <tr><td>《中高级口译考试词汇必备》等</td><td>—</td><td>词汇</td><td>按主题过一遍，配合每日双语素材活学</td></tr>
+</table></div>
+<div class="callout ok">✅ 时间紧的最小组合（经验帖共识）：<b>《高级听力教程》+ 真题汇编 + 《高级口译教程》</b>三本。其余按弱项补。</div>
+
+<h2 id="audio">教程与真题音频渠道</h2>
+<ul>
+  <li><a href="https://www.kekenet.com/course/14221" target="_blank" rel="noopener">可可英语 · 高级口译教程音频专辑</a>——《高级口译教程》（第四版）配套音频逐篇收听/下载，口译课文练听译全靠它。</li>
+  <li><a href="https://we.sflep.com/" target="_blank" rel="noopener">上海外语教育出版社（WE 平台）</a>——官方出版社资源页，教材配套音频与数字资源入口。</li>
+  <li>真题听力音频：随真题汇编出版物配套，或从各大听力 App（每日英语听力、可可英语）搜「上海高级口译 真题」。</li>
+</ul>
+
+<h2 id="github">GitHub 开源工具（星数实时刷新）</h2>
+<p class="sub">全网检索后值得装的几个：都能把任意视频/播客变成听写、跟读、口译练习——与本站训练台互补。</p>
+<div class="grid c3">
+  <div class="card"><h3><a href="https://github.com/Samuelxiaozhuofeng/LinguaClip" target="_blank" rel="noopener">LinguaClip</a> <span class="badge tool" data-stars="Samuelxiaozhuofeng/LinguaClip"></span></h3><p class="meta">把任意视频/播客切片做成听写练习——切真题音频片段很方便。</p></div>
+  <div class="card"><h3><a href="https://github.com/TideSparrow/shadowing-english" target="_blank" rel="noopener">shadowing-english</a> <span class="badge tool" data-stars="TideSparrow/shadowing-english"></span></h3><p class="meta">本地优先的影子跟读应用，导入自己的视频+字幕逐句跟读。</p></div>
+  <div class="card"><h3><a href="https://github.com/Oliviaviaviavia/english-trainer" target="_blank" rel="noopener">english-trainer</a> <span class="badge tool" data-stars="Oliviaviaviavia/english-trainer"></span></h3><p class="meta">本地版「听力/跟读/发音」三合一训练器。</p></div>
+  <div class="card"><h3><a href="https://github.com/blacksnail789521/youtube-shadowing" target="_blank" rel="noopener">youtube-shadowing</a> <span class="badge tool" data-stars="blacksnail789521/youtube-shadowing"></span></h3><p class="meta">YouTube 视频 + Whisper 字幕做跟读，泛听转精听利器。</p></div>
+  <div class="card"><h3><a href="https://github.com/PipiTang233/wanglu-dictation-app" target="_blank" rel="noopener">wanglu-dictation-app</a> <span class="badge tool" data-stars="PipiTang233/wanglu-dictation-app"></span></h3><p class="meta">雅思王陆语料库听写工具——与雅思备考共用，练耳朵底层能力。</p></div>
+  <div class="card"><h3><a href="https://github.com/yanghongyang/CATTI-level-2" target="_blank" rel="noopener">CATTI-level-2</a> <span class="badge tool" data-stars="yanghongyang/CATTI-level-2"></span></h3><p class="meta">CATTI 二口备考笔记——笔记法与口译训练方法可迁移到高口口试。</p></div>
+</div>
+
+<h2 id="sites">网站与常驻素材</h2>
+<div class="grid c3">
+  <div class="card"><h3>🏛 官方渠道</h3><ul style="padding-left:18px;margin:6px 0 0">
+    <li><a href="https://www.shwyky.net" target="_blank" rel="noopener">上海外语口译证书考试网</a>——报名、考务日历、样题</li>
+    <li><a href="http://yingyu.xdf.cn/zhuanti/shanghaikouyi/index.html" target="_blank" rel="noopener">新东方上海口译专题</a>——题型技巧与真题解析</li>
+  </ul></div>
+  <div class="card"><h3>🌍 口译语料库</h3><ul style="padding-left:18px;margin:6px 0 0">
+    <li><a href="https://speech-repository.webcloud.ec.europa.eu/" target="_blank" rel="noopener">EU Speech Repository</a>——欧盟口译署语料库，按难度/主题分级，口译训练金标准</li>
+    <li><a href="https://www.speechpool.net/" target="_blank" rel="noopener">Speechpool</a>——口译学习者共建的演讲视频库</li>
+    <li><a href="https://www.ted.com/" target="_blank" rel="noopener">TED</a>——中高级难度段落的最佳来源，挑 2 分钟片段练复述</li>
+  </ul></div>
+  <div class="card"><h3>📰 外刊与双语</h3><ul style="padding-left:18px;margin:6px 0 0">
+    <li><a href="https://www.economist.com/" target="_blank" rel="noopener">The Economist</a>——阅读部分同源风格，每周精读 2 篇</li>
+    <li><a href="https://www.ftchinese.com/channel/english.html" target="_blank" rel="noopener">FT中文网 · 双语阅读</a>——汉英翻译最佳对照语料</li>
+    <li><a href="https://www.chinadaily.com.cn/" target="_blank" rel="noopener">China Daily</a>——政策表述固定译法官方参照</li>
+  </ul></div>
+  <div class="card"><h3>🎧 泛听主力</h3><ul style="padding-left:18px;margin:6px 0 0">
+    <li><a href="https://www.bbc.co.uk/programmes/p02p9bjd" target="_blank" rel="noopener">BBC Global News Podcast</a>——每日国际新闻，听译素材</li>
+    <li><a href="https://edition.cnn.com/cnn10" target="_blank" rel="noopener">CNN 10</a>——十分钟新闻课堂，中高难度</li>
+    <li><a href="https://www.npr.org/sections/news/" target="_blank" rel="noopener">NPR News</a>——美音补充，速度适中</li>
+  </ul></div>
+  <div class="card"><h3>🎙 AI 对练</h3><ul style="padding-left:18px;margin:6px 0 0">
+    <li>各大模型语音对话——把译文说给 AI 让它复述要点，检查信息完整性</li>
+    <li>Whisper 本地转写——把自己的口译录音转成文字自查漏译（与 <a href="https://github.com/" target="_blank" rel="noopener">本地听写工作流</a>衔接）</li>
+  </ul></div>
+  <div class="card"><h3>📚 词汇</h3><ul style="padding-left:18px;margin:6px 0 0">
+    <li>《中高级口译考试词汇必备》——按主题分类，正对口试九大主题</li>
+    <li>口译笔记符号：可参考 CATTI 高口通用符号体系，教程见 <a href="oral.html#note">笔记法</a></li>
+  </ul></div>
+</div>
+
+<h2 id="posts">经验帖精选（2026-10 检索）</h2>
+<ul>
+  <li><a href="https://www.zhihu.com/question/28804524/answer/595152267" target="_blank" rel="noopener">知乎 · 如何备考上海高级口译（秦浅）</a>——听力教程 16 单元听译<strong>会有原题</strong>+真题集打法。</li>
+  <li><a href="https://zhuanlan.zhihu.com/p/27809772" target="_blank" rel="noopener">知乎 · 高级口译经验分享（笔试+口试）</a>——四本书精简为「真题汇编+口译教程」的思路。</li>
+  <li><a href="https://www.zhihu.com/question/26221103/answer/50360972" target="_blank" rel="noopener">知乎 · 如何备考高级口译（悦然）</a>——听力教程提听力 + BBC/NPR/CNN 泛听组合。</li>
+  <li><a href="https://www.zhihu.com/question/27119410/answer/747957513" target="_blank" rel="noopener">知乎 · 你努力了多久拿到高级口译证？</a>——目标 180 分、不求高分的定位参考。</li>
+  <li><a href="https://zhuanlan.zhihu.com/p/462672704" target="_blank" rel="noopener">知乎 · 上海中高级口译介绍</a>——两阶段考试结构全景。</li>
+</ul>
+
+<h2 id="feeds">每日更新的听力素材</h2>
+<p class="sub">由 GitHub Actions 每天早上自动抓取最新节目，直接点开听。</p>
+<div data-feeds></div>
+
+</main>
+
+<footer>
+  <p><b>高级口译通关营</b> · 静态站点，托管于 GitHub Pages，素材更新由 GitHub Actions 自动完成。</p>
+  <p>本站只收录方法、链接与自研工具，不存储任何受版权保护的音视频与真题文件；请通过官方渠道获取教材与音频。</p>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

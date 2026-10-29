@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>训练台 · 高级口译通关营</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner">
+  <a class="brand" href="index.html">高级口译 <span>通关营</span></a>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="exam.html">考试全解</a>
+    <a href="roadmap.html">路线图</a>
+    <a href="written.html">笔试训练</a>
+    <a href="oral.html">口试训练</a>
+    <a href="practice.html">训练台</a>
+    <a href="materials.html">资源库</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+  <h1>训练台：听写工作台 + 口译段落台</h1>
+  <p class="lead">两个纯前端工具，<b>音频和录音全程不出本机</b>。听写台把任何音频变成逐句精听（配笔试听力）；口译段落台模拟考场「只放一遍 + 即刻开口 + 录音复盘」（配口试与听译）。</p>
+  <p class="lead">素材建议：《高级听力教程》《高级口译教程》官方音频（<a href="materials.html">获取渠道见资源库</a>），或真题音频。录音仅用于当场回放，不会被上传。</p>
+</section>
+
+<h2 id="dictation">🎧 听写工作台</h2>
+<p class="sub">用法：拖入音频 → 粘贴原文（每行一句）→ 逐句听写 → 对答案 → 标记对错。支持变速与 A-B 循环。</p>
+<div class="card" style="margin-bottom:16px">
+  <div id="drop-zone" style="border:2px dashed var(--line);border-radius:12px;padding:22px;text-align:center;color:var(--muted);cursor:pointer">
+    🎵 把音频文件拖到这里，或点击选择（mp3 / m4a / wav）
+    <input id="audio-file" type="file" accept="audio/*" style="display:none">
+  </div>
+  <p class="small" id="file-hint" style="margin:10px 0 0">尚未载入音频。教程音频可从 <a href="materials.html">资源库</a> 列出的渠道获取。</p>
+</div>
+
+<div class="bench" id="bench-body" style="display:none">
+  <div class="card">
+    <audio id="audio" controls></audio>
+    <div class="bench-controls">
+      <select id="speed" title="播放速度">
+        <option value="0.6">0.6×</option>
+        <option value="0.8">0.8×</option>
+        <option value="1" selected>1.0×</option>
+        <option value="1.2">1.2×</option>
+        <option value="1.5">1.5×</option>
+      </select>
+      <button id="btn-a" title="标记循环起点">Ⓐ 设起点</button>
+      <button id="btn-b" title="标记循环终点">Ⓑ 设终点</button>
+      <button id="btn-loop">🔁 循环关</button>
+      <button id="btn-clear-ab">清除 AB</button>
+      <span class="marks"><span id="mark-a">A: --.-</span> · <span id="mark-b">B: --.-</span> · 空格播放/暂停 · <span class="kbd">Alt+Q</span>/<span class="kbd">Alt+W</span> 设AB点</span>
+    </div>
+    <p class="small" style="margin:10px 0 0">听写建议：一句话三遍——盲写 → 补漏 → 查语法（单复数/时态/冠词）。这正是笔试 SPOT DICTATION 的得分动作。</p>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">原文（每行一句）</h3>
+    <textarea id="transcript" placeholder="把原文粘贴到这里，每行一句。教程课文与真题听力原文都可以。"></textarea>
+    <div class="bench-controls" style="margin-top:10px">
+      <button id="load-text" class="primary">载入原文，开始听写</button>
+      <span class="marks" id="progress"></span> <span class="marks">正确率 <b id="acc">--</b></span>
+    </div>
+    <div id="line-list" style="margin-top:10px;max-height:220px;overflow:auto;font-size:14.5px"></div>
+    <div style="margin-top:12px">
+      <div class="marks" id="idx-label">载入原文后开始</div>
+      <input id="answer-input" type="text" placeholder="把你听到的那句打在这里（可选）" style="margin-top:8px">
+      <div class="bench-controls" style="margin-top:8px">
+        <button id="btn-reveal">对答案（或按 Enter）</button>
+        <button id="btn-replay">↺ 回放本句（A 点 / 5 秒前）</button>
+      </div>
+      <div class="answer-box" id="answer-box"><div class="empty">听完后点「对答案」查看原文</div></div>
+      <div class="bench-controls" id="mark-btns" style="display:none;margin-top:10px">
+        <button id="m-ok" class="primary">✅ 全对</button>
+        <button id="m-close">🟡 接近（小错）</button>
+        <button id="m-miss">❌ 没写出来</button>
+        <button id="btn-prev">← 上一句</button>
+        <button id="btn-next">下一句 →</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" style="margin-top:16px">
+  <h3 style="margin-top:0">最近 7 天听写正确率</h3>
+  <div class="stat-row" id="hist"></div>
+</div>
+
+<hr class="sep">
+
+<h2 id="oral">🎙️ 口译段落台：只放一遍 · 即刻开口 · 录音复盘</h2>
+<p class="sub">模拟口试与听译的核心纪律：每段只听一遍，听完 3 秒内开口。录音仅供当场对比，不会上传。</p>
+<div class="bench" id="oral-body" style="display:none">
+  <div class="card">
+    <div style="border:2px dashed var(--line);border-radius:12px;padding:18px;text-align:center;color:var(--muted);cursor:pointer" id="oral-drop">
+      🎵 拖入一段音频（一段口译材料 / 教程课文 / 真题段落）
+      <input id="oral-file" type="file" accept="audio/*" style="display:none">
+    </div>
+    <p class="small" id="oral-hint" style="margin:8px 0 10px">未载入</p>
+    <audio id="oral-audio" controls></audio>
+    <div class="bench-controls" style="margin-top:8px">
+      <button id="obtn-once" class="primary">▶ 播放一遍（到终点自动停）</button>
+      <button id="obtn-a">Ⓐ 设起点</button>
+      <button id="obtn-b">Ⓑ 设终点</button>
+      <button id="obtn-clear">清除 AB</button>
+      <select id="ospeed">
+        <option value="0.7">0.7×</option>
+        <option value="1" selected>1.0×</option>
+        <option value="1.2">1.2×</option>
+      </select>
+      <span class="marks">已播放 <b id="oplay-count">0</b> 次（考场纪律：1 次）</span>
+    </div>
+    <hr class="sep">
+    <div class="bench-controls">
+      <button id="obtn-rec">🎙 开始录音</button>
+      <span class="marks" id="orec-hint">录音需允许浏览器使用麦克风，数据不出本机</span>
+    </div>
+    <div id="orec-playback" style="margin-top:10px"></div>
+    <p class="small" style="margin:10px 0 0">流程：播放一遍 → 立刻对着麦克风口译 → 停止录音 → 先回放原音，再回放自己的译文 → 右侧标记「及格 / 不及格」并写下漏译点。</p>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">本段标记</h3>
+    <div class="bench-controls">
+      <button id="omark-pass" class="primary">✅ 及格（信息完整）</button>
+      <button id="omark-fail">❌ 不及格（有漏译/错译主干）</button>
+      <button id="onext">下一段 →</button>
+    </div>
+    <textarea id="onote" placeholder="漏译了什么？数字？主干动词？卡在哪？——一行就够" style="margin-top:12px;min-height:80px"></textarea>
+    <h3 style="margin:18px 0 6px">段落状态</h3>
+    <div id="oline-list" style="max-height:150px;overflow:auto;font-size:14.5px;color:var(--muted)">载入音频后，每播放一遍计为一段。</div>
+    <div class="stat-row">
+      <div class="stat"><b id="opass">0</b><span>及格段</span></div>
+      <div class="stat"><b id="ofail">0</b><span>不及格段</span></div>
+      <div class="stat"><b id="oratio">--</b><span>及格率（目标 ≥ 75%）</span></div>
+    </div>
+    <p class="small" style="margin:8px 0 0">及格率 ≥ 75% 相当于口试 8 段过 6 段的通关线。统计保存在本机浏览器。</p>
+  </div>
+</div>
+
+<div class="callout warn" id="oral-empty">💡 口译段落台需要先载入音频：点击上方虚线框选择文件。没有现成音频？先用 <a href="materials.html#feeds">每日更新的播客</a>截取 1–2 分钟段落练「只放一遍复述」，教程音频获取渠道见 <a href="materials.html">资源库</a>。</div>
+
+</main>
+
+<footer>
+  <p><b>高级口译通关营</b> · 纯前端工具，音频与录音全程不出本机。</p>
+</footer>
+
+<script src="assets/practice.js"></script>
+</body>
+</html>

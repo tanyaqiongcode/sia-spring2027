@@ -1,0 +1,60 @@
+{
+  "updated": "2026-10-29T17:30:28.506386+00:00",
+  "feeds": [
+    {
+      "id": "cnn10",
+      "name": "CNN 10",
+      "url": "https://feeds.megaphone.fm/WMHY2232473209",
+      "items": [
+        {
+          "title": "Spain Investigates Deadly Collision Between Two High-Speed Trains",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY6399124938.mp3",
+          "date": "Thu, 29 Oct 2026 15:00:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY6399124938.mp3"
+        },
+        {
+          "title": "How a Student-Led Movement Ousted Serbia’s Long-Term President",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7594466691.mp3",
+          "date": "Wed, 28 Oct 2026 11:57:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7594466691.mp3"
+        },
+        {
+          "title": "America Welcomes Its 64th National Park in Arizona",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7956413658.mp3",
+          "date": "Tue, 27 Oct 2026 14:37:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7956413658.mp3"
+        },
+        {
+          "title": "These Tiny Computer Chips Could Help Data Centers Waste Less Power",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY5535306404.mp3",
+          "date": "Mon, 26 Oct 2026 14:06:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY5535306404.mp3"
+        },
+        {
+          "title": "How This Burger Joint Is Surviving Record High Beef Prices",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7776465562.mp3",
+          "date": "Fri, 23 Oct 2026 15:57:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7776465562.mp3"
+        },
+        {
+          "title": "Why a Chemical Explosion Evacuated Hundreds in Ohio",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY9046817687.mp3",
+          "date": "Thu, 22 Oct 2026 12:22:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY9046817687.mp3"
+        },
+        {
+          "title": "Why a Surprise Blood Clot Diagnosis Is Sidelining One of the Nfl’s Biggest Stars",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2051038333.mp3",
+          "date": "Wed, 21 Oct 2026 13:15:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2051038333.mp3"
+        },
+        {
+          "title": "A New Mars Mission Aims to Uncover the Mysteries of Its Moons",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3623762219.mp3",
+          "date": "Tue, 20 Oct 2026 12:42:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3623762219.mp3"
+        }
+      ]
+    }
+  ]
+}
