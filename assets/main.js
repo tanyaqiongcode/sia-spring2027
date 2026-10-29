@@ -94,8 +94,14 @@
     var verdict = document.querySelector("[data-pf-verdict]");
     pf.querySelectorAll(".pf-unit").forEach(function (u) {
       u.addEventListener("click", function () {
-        u.classList.toggle("pass");
-        u.classList.toggle("fail");
+        if (u.classList.contains("pass")) {
+          u.classList.remove("pass");
+          u.classList.add("fail");
+        } else if (u.classList.contains("fail")) {
+          u.classList.remove("fail");
+        } else {
+          u.classList.add("pass");
+        }
         var passes = pf.querySelectorAll(".pf-unit.pass").length;
         var fails = pf.querySelectorAll(".pf-unit.fail").length;
         if (verdict) {
