@@ -1,6 +1,61 @@
 {
-  "updated": "2026-10-29T17:30:28.506386+00:00",
+  "updated": "2026-10-29T17:51:45.679506+00:00",
   "feeds": [
+    {
+      "id": "bbc-globalnews",
+      "name": "BBC Global News Podcast",
+      "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
+      "items": [
+        {
+          "title": "Deadly Russian drone hits Ukrainian railway station",
+          "link": "http://www.bbc.co.uk/programmes/p0pk9z25",
+          "date": "Thu, 29 Oct 2026 15:48:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pk9x5b.mp3"
+        },
+        {
+          "title": "Bolsonaro declares himself 'Brazil's leader'",
+          "link": "http://www.bbc.co.uk/programmes/p0pk6j6v",
+          "date": "Thu, 29 Oct 2026 05:29:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pk6j15.mp3"
+        },
+        {
+          "title": "Dozens killed in train crash in Spain",
+          "link": "http://www.bbc.co.uk/programmes/p0pk3hmm",
+          "date": "Wed, 28 Oct 2026 16:28:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pk3gws.mp3"
+        },
+        {
+          "title": "Israel election too close to call",
+          "link": "http://www.bbc.co.uk/programmes/p0pjz1m1",
+          "date": "Wed, 28 Oct 2026 05:23:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjz1h1.mp3"
+        },
+        {
+          "title": "Huge turnout in Israeli election",
+          "link": "http://www.bbc.co.uk/programmes/p0pjwfwn",
+          "date": "Tue, 27 Oct 2026 16:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjw48x.mp3"
+        },
+        {
+          "title": "Israel holds first election since October 7th attacks",
+          "link": "http://www.bbc.co.uk/programmes/p0pjrnd4",
+          "date": "Tue, 27 Oct 2026 05:28:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjrn53.mp3"
+        },
+        {
+          "title": "What's next for China after Xi Jinping?",
+          "link": "http://www.bbc.co.uk/programmes/p0pjpv9t",
+          "date": "Tue, 27 Oct 2026 00:01:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjptfq.mp3"
+        },
+        {
+          "title": "Leaderless student movement wins Serbian election",
+          "link": "http://www.bbc.co.uk/programmes/p0pjpv1c",
+          "date": "Mon, 26 Oct 2026 16:31:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjptg9.mp3"
+        }
+      ]
+    },
     {
       "id": "cnn10",
       "name": "CNN 10",
@@ -53,6 +108,116 @@
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3623762219.mp3",
           "date": "Tue, 20 Oct 2026 12:42:00 -0000",
           "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3623762219.mp3"
+        }
+      ]
+    },
+    {
+      "id": "bbc-bizdaily",
+      "name": "BBC Business Daily",
+      "url": "https://downloads.bbc.co.uk/podcasts/worldservice/bizdaily/rss.xml",
+      "items": [
+        {
+          "title": "Power players: Can Meta reinvent itself for the AI age?",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8gm6",
+          "date": "Wed, 28 Oct 2026 23:01:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pk63hj.mp3"
+        },
+        {
+          "title": "What do France's protests reveal about its economy?",
+          "link": "http://www.bbc.co.uk/programmes/w3ct98st",
+          "date": "Tue, 27 Oct 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjx1f7.mp3"
+        },
+        {
+          "title": "Follow the money: The end of cheap money in Japan",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8grq",
+          "date": "Mon, 26 Oct 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjqwq8.mp3"
+        },
+        {
+          "title": "If China's exports are booming, why are consumers struggling?",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8ggp",
+          "date": "Sun, 25 Oct 2026 19:00:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjbgr8.mp3"
+        },
+        {
+          "title": "Taking stock: What French protests, Netflix data and the Alberta referendum reveal",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8g9z",
+          "date": "Thu, 22 Oct 2026 17:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pj34xb.mp3"
+        },
+        {
+          "title": "Power players: Has Netflix hit a wall?",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8gm0",
+          "date": "Wed, 21 Oct 2026 12:06:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0phsqxz.mp3"
+        },
+        {
+          "title": "Founders: Olio CEO Tessa Clarke's fight against food waste",
+          "link": "http://www.bbc.co.uk/programmes/w3ct98sm",
+          "date": "Tue, 20 Oct 2026 20:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0phnd4b.mp3"
+        },
+        {
+          "title": "Follow the Money: The cost of sending money home",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8grj",
+          "date": "Mon, 19 Oct 2026 20:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0phgf4y.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ft-bilingual",
+      "name": "FT中文网 · 双语阅读",
+      "url": "https://www.ftchinese.com/rss/feed",
+      "items": [
+        {
+          "title": "香港特首就宏福苑大火致歉",
+          "link": "https://www.ftchinese.com/story/001111231",
+          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "每周时事分析：金正恩访问丹东的影响",
+          "link": "https://www.ftchinese.com/story/001111226",
+          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "卢拉胜选：繁荣的旧梦与左派的黄昏",
+          "link": "https://www.ftchinese.com/story/001111227",
+          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "预测市场把华盛顿搞成了赌场",
+          "link": "https://www.ftchinese.com/story/001111225",
+          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "中国需求减弱影响GSK疫苗销售额",
+          "link": "https://www.ftchinese.com/story/001111224",
+          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "在巴黎看见当代艺术市场的多重现实",
+          "link": "https://www.ftchinese.com/story/001111210",
+          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "从星舰到燃机叶片：马斯克争夺AI时代的“通电时间”",
+          "link": "https://www.ftchinese.com/story/001111216",
+          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "为何强制社保引发灵活就业者群体不满？",
+          "link": "https://www.ftchinese.com/story/001111223",
+          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "audio": ""
         }
       ]
     }
