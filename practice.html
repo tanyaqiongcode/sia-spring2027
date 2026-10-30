@@ -38,6 +38,15 @@
 
 <div class="callout">🧰 练习进度、听写与口译记录都保存在本机浏览器。换设备或清理浏览器前，点 <button id="btn-export" style="padding:2px 10px;border-radius:8px;border:1px solid var(--line);background:var(--card);cursor:pointer;font-size:13px">⬇️ 导出练习数据</button> 备份（JSON）。工具逻辑自检见 <a href="selftest.html">自检页</a>。</div>
 
+<div class="card" style="margin-bottom:16px">
+  <h3 style="margin-top:0">💾 本机音频库 <span class="badge tool">IndexedDB · 不出本机 · 不进仓库</span></h3>
+  <p class="small" style="margin:0 0 10px">官方教程 / 真题音频版权归出版方所有，本站不内置、不存储；但你可以把<b>下载到本机的音频</b>存进自己浏览器的数据库：拖入任一工作台后点「💾 存入本机音频库」，以后打开网站一键载入，无需重复拖文件（通常可存数百 MB，清理浏览器站点数据会删除）。</p>
+  <div id="lib-list"><p class="small">正在读取本机音频库…</p></div>
+  <div class="bench-controls" style="margin-top:8px">
+    <button id="lib-refresh">↻ 刷新列表</button>
+  </div>
+</div>
+
 <h2 id="dictation">🎧 听写工作台</h2>
 <p class="sub">用法：拖入音频 → 粘贴原文（每行一句）→ 逐句听写 → 对答案 → 标记对错。支持变速与 A-B 循环。</p>
 <div class="card" style="margin-bottom:16px">
@@ -46,6 +55,9 @@
     <input id="audio-file" type="file" accept="audio/*" style="display:none">
   </div>
   <p class="small" id="file-hint" style="margin:10px 0 0">尚未载入音频。教程音频可从 <a href="materials.html">资源库</a> 列出的渠道获取。</p>
+  <div class="bench-controls" style="margin-top:6px">
+    <button id="save-dict" style="display:none">💾 存入本机音频库</button>
+  </div>
 </div>
 
 <div class="bench" id="bench-body" style="display:none">
@@ -110,6 +122,9 @@
       <input id="oral-file" type="file" accept="audio/*" style="display:none">
     </div>
     <p class="small" id="oral-hint" style="margin:8px 0 10px">未载入</p>
+    <div class="bench-controls" style="margin-bottom:6px">
+      <button id="save-oral" style="display:none">💾 存入本机音频库</button>
+    </div>
     <audio id="oral-audio" controls></audio>
     <div class="bench-controls" style="margin-top:8px">
       <button id="obtn-once" class="primary">▶ 播放一遍（到终点自动停）</button>

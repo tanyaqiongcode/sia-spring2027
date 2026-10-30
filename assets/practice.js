@@ -7,6 +7,69 @@
 
   var $ = function (s) { return document.querySelector(s); };
   var SIA = window.SIA || {};
+  var hooks = {};          // 供本机音频库回调：hooks.dictLoad / hooks.oralLoad / hooks.dictFile / hooks.oralFile
+
+  /* ---------- 本机音频库（IndexedDB）：音频不出本机、不进公开仓库 ---------- */
+  function idbOpen() {
+    return new Promise(function (resolve, reject) {
+      var req = indexedDB.open("sia-audio", 1);
+      req.onupgradeneeded = function () {
+        if (!req.result.objectStoreNames.contains("clips")) {
+          req.result.createObjectStore("clips", { keyPath: "id" });
+        }
+      };
+      req.onsuccess = function () { resolve(req.result); };
+      req.onerror = function () { reject(req.error); };
+    });
+  }
+  function idbStore(db, mode) { return db.transaction("clips", mode).objectStore("clips"); }
+  function libSave(file) {
+    return idbOpen().then(function (db) {
+      return new Promise(function (resolve, reject) {
+        var store = idbStore(db, "readwrite");
+        store.put({
+          id: file.name + " · " + file.size,
+          name: file.name,
+          size: file.size,
+          type: file.type || "audio/mpeg",
+          added: Date.now(),
+          blob: file,
+        });
+        store.transaction.oncomplete = function () { db.close(); resolve(); };
+        store.transaction.onerror = function () { db.close(); reject(store.transaction.error); };
+      });
+    });
+  }
+  function libAll() {
+    return idbOpen().then(function (db) {
+      return new Promise(function (resolve) {
+        var req = idbStore(db, "readonly").getAll();
+        req.onsuccess = function () { db.close(); resolve(req.result || []); };
+        req.onerror = function () { db.close(); resolve([]); };
+      });
+    });
+  }
+  function libGet(id) {
+    return idbOpen().then(function (db) {
+      return new Promise(function (resolve) {
+        var req = idbStore(db, "readonly").get(id);
+        req.onsuccess = function () { db.close(); resolve(req.result); };
+        req.onerror = function () { db.close(); resolve(null); };
+      });
+    });
+  }
+  function libDelete(id) {
+    return idbOpen().then(function (db) {
+      return new Promise(function (resolve) {
+        var req = idbStore(db, "readwrite").delete(id);
+        req.onsuccess = function () { db.close(); resolve(); };
+        req.onerror = function () { db.close(); resolve(); };
+      });
+    });
+  }
+  function fmtSize(bytes) {
+    return bytes >= 1048576 ? (bytes / 1048576).toFixed(1) + " MB" : Math.max(1, Math.round(bytes / 1024)) + " KB";
+  }
 
   function todayKey() {
     var d = new Date();
@@ -57,8 +120,23 @@
       audio.src = URL.createObjectURL(file);
       $("#file-hint").textContent = "🎵 " + file.name;
       $("#bench-body").style.display = "";
+      hooks.dictFile = file;
+      hooks.dictLoad = loadFile;
+      $("#save-dict").style.display = "";
+      $("#save-dict").textContent = "💾 存入本机音频库";
     }
+    $("#save-dict").addEventListener("click", function () {
+      if (!hooks.dictFile) return;
+      var btn = this;
+      libSave(hooks.dictFile).then(function () {
+        btn.textContent = "✅ 已存入本机库";
+        if (hooks.libRender) hooks.libRender();
+      }).catch(function (e) {
+        alert("存入失败（可能是空间不足或隐私模式）：" + e);
+      });
+    });
     $("#audio-file").addEventListener("change", function (e) { loadFile(e.target.files[0]); });
+    hooks.dictLoad = loadFile;   // 供本机音频库直接载入
     var drop = $("#drop-zone");
     drop.addEventListener("click", function () { $("#audio-file").click(); });
     ["dragover", "dragenter"].forEach(function (ev) {
@@ -323,8 +401,23 @@
       oralSessionId = "o" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
       oSaveSession();
       renderSegs();
+      hooks.oralFile = file;
+      hooks.oralLoad = oLoad;
+      $("#save-oral").style.display = "";
+      $("#save-oral").textContent = "💾 存入本机音频库";
     }
+    $("#save-oral").addEventListener("click", function () {
+      if (!hooks.oralFile) return;
+      var btn = this;
+      libSave(hooks.oralFile).then(function () {
+        btn.textContent = "✅ 已存入本机库";
+        if (hooks.libRender) hooks.libRender();
+      }).catch(function (e) {
+        alert("存入失败（可能是空间不足或隐私模式）：" + e);
+      });
+    });
     $("#oral-file").addEventListener("change", function (e) { oLoad(e.target.files[0]); });
+    hooks.oralLoad = oLoad;      // 供本机音频库直接载入
     var odrop = $("#oral-drop");
     odrop.addEventListener("click", function () { $("#oral-file").click(); });
     ["dragover", "dragenter"].forEach(function (ev) {
@@ -434,5 +527,70 @@
     $("#omark-pass").addEventListener("click", function () { markSeg("pass"); });
     $("#omark-fail").addEventListener("click", function () { markSeg("fail"); });
     $("#onext").addEventListener("click", function () { $("#obtn-once").click(); });
+  }
+
+  /* ================= ③ 本机音频库管理 ================= */
+  if ($("#lib-list")) {
+    function libRender() {
+      libAll().then(function (rows) {
+        var box = $("#lib-list");
+        box.textContent = "";
+        if (!rows.length) {
+          var empty = document.createElement("p");
+          empty.className = "small";
+          empty.textContent = "还没有保存的音频——把音频拖入上方任一工作台后，点「💾 存入本机音频库」。";
+          box.appendChild(empty);
+          return;
+        }
+        rows.sort(function (a, b) { return (b.added || 0) - (a.added || 0); });
+        rows.forEach(function (rec) {
+          var row = document.createElement("div");
+          row.className = "lib-row";
+          var name = document.createElement("span");
+          name.className = "lib-name";
+          name.textContent = rec.name;
+          var meta = document.createElement("span");
+          meta.className = "lib-meta";
+          meta.textContent = fmtSize(rec.size || 0) + " · " + new Date(rec.added || Date.now()).toISOString().slice(0, 10);
+          var bDict = document.createElement("button");
+          bDict.textContent = "→ 听写台";
+          bDict.addEventListener("click", function () { libLoad(rec.id, "dict"); });
+          var bOral = document.createElement("button");
+          bOral.textContent = "→ 口译台";
+          bOral.addEventListener("click", function () { libLoad(rec.id, "oral"); });
+          var bDel = document.createElement("button");
+          bDel.className = "danger";
+          bDel.textContent = "删除";
+          bDel.addEventListener("click", function () {
+            if (!confirm("从本机音频库删除「" + rec.name + "」？")) return;
+            libDelete(rec.id).then(libRender);
+          });
+          row.appendChild(name);
+          row.appendChild(meta);
+          row.appendChild(bDict);
+          row.appendChild(bOral);
+          row.appendChild(bDel);
+          box.appendChild(row);
+        });
+      });
+    }
+    hooks.libRender = libRender;
+    libRender();
+
+    function libLoad(id, target) {
+      libGet(id).then(function (rec) {
+        if (!rec) { alert("记录不存在，请刷新列表。"); return; }
+        var file = new File([rec.blob], rec.name, { type: rec.type });
+        if (target === "dict" && hooks.dictLoad) {
+          hooks.dictLoad(file);
+          document.getElementById("dictation").scrollIntoView({ behavior: "smooth" });
+        }
+        if (target === "oral" && hooks.oralLoad) {
+          hooks.oralLoad(file);
+          document.getElementById("oral").scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    }
+    $("#lib-refresh").addEventListener("click", libRender);
   }
 })();

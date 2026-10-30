@@ -54,6 +54,7 @@
     <li><b>注入防护</b>：粘贴的原文与 RSS 标题只经 textContent 进 DOM；链接只放行 http(s)。</li>
     <li><b>记录聚合</b>：同一句/段重复评分按记录键覆盖，不重复累计。</li>
     <li><b>录音</b>：MediaRecorder 可用性与麦克风授权。</li>
+      <li><b>音频库</b>：IndexedDB 可用——「本机音频库」靠它把音频存在你自己的浏览器里。</li>
   </ul></div>
   <div class="card"><h3>遇到 ❌ 怎么办</h3><ul>
     <li>存储 ❌：浏览器开了无痕/隐私模式或禁用了站点数据——换普通模式。</li>
@@ -162,6 +163,37 @@
     box.appendChild(verdict);
   }
   paint();
+
+  // 8. IndexedDB（本机音频库存储层）
+  try {
+    if (!window.indexedDB) {
+      check("IndexedDB（本机音频库）", false, "此浏览器不支持 IndexedDB");
+      paint();
+    } else {
+      var idbReq = indexedDB.open("sia-selftest", 1);
+      idbReq.onupgradeneeded = function () {
+        if (!idbReq.result.objectStoreNames.contains("t")) idbReq.result.createObjectStore("t");
+      };
+      idbReq.onerror = function () { check("IndexedDB（本机音频库）", false, String(idbReq.error)); paint(); };
+      idbReq.onsuccess = function () {
+        var db = idbReq.result;
+        try {
+          var tx = db.transaction("t", "readwrite");
+          tx.objectStore("t").put({ v: 1 }, "k");
+          tx.oncomplete = function () {
+            var get = db.transaction("t").objectStore("t").get("k");
+            get.onsuccess = function () {
+              check("IndexedDB（本机音频库）", !!(get.result && get.result.v === 1));
+              try { db.transaction("t", "readwrite").objectStore("t").delete("k"); } catch (e) {}
+              db.close();
+              paint();
+            };
+            get.onerror = function () { check("IndexedDB（本机音频库）", false, String(get.error)); db.close(); paint(); };
+          };
+        } catch (e) { check("IndexedDB（本机音频库）", false, String(e)); db.close(); paint(); }
+      };
+    }
+  } catch (e) { check("IndexedDB（本机音频库）", false, String(e)); paint(); }
 
   // 手动：麦克风权限
   document.getElementById("btn-mic").addEventListener("click", function () {
