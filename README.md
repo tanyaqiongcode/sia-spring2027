@@ -19,15 +19,34 @@
 | 路线图 | 2026-10 → 2027-06 五阶段逐月计划、每日 120 分钟模板、每周复盘四问 |
 | 笔试训练 | 听写填空 / 听力理解 / 笔记听译 / 阅读 / 英译汉 / 汉译英各题型策略、真题三刷节奏 |
 | 口试训练 | Talk 三段式模板、8 段英汉战术（英 4 保满 / 汉 4 保 2–3）、笔记法五步、九大话题语料库、常见坑 |
-| 训练台 | **听写工作台**（本地音频逐句听写、AB 循环、变速、错因标记、7 天正确率）+ **口译段落台**（只放一遍模拟、麦克风录音对比、及格率统计），全程数据不出本机 |
+| 训练台 | **听写工作台**（本地音频逐句听写、AB 循环、变速、错因标记、7 天正确率、进度自动恢复）+ **口译段落台**（只放一遍模拟、麦克风录音对比、录音下载、及格率统计），支持一键导出全部练习数据（JSON），全程数据不出本机 |
 | 资源库 | 官方五册教材用法表、音频获取渠道、GitHub 开源工具（星数实时刷新）、外刊/口译语料库、经验帖精选、**每日自动更新的播客素材** |
+| 自检 | 浏览器内自检页：存储读写、注入防护、链接协议校验、记录聚合、录音能力与麦克风权限一键检测 |
 
 ## 「静态托管 + 动态体验」的架构
 
 - 纯 HTML/CSS/JS，无框架、无后端、无构建步骤。
-- `scripts/update_feeds.py` 每日抓取 BBC Global News / CNN 10 / Business Daily / FT中文网双语 RSS 生成 `data/latest.json`，由 GitHub Actions（`update-feeds.yml`，UTC 00:40）自动提交。
+- `scripts/update_feeds.py` 每日抓取 BBC Global News / CNN 10 / Business Daily / FT中文网双语 RSS 生成 `data/latest.json`，由 GitHub Actions（`update-feeds.yml`，UTC 00:40）自动提交。**部分源失败时保留上次成功结果并标记 stale**，全部失败则不提交。
 - 资源页 GitHub 工具星数通过 GitHub API 实时读取。
-- 打卡、听写、口译自评统计存于浏览器 localStorage，不上传任何数据。
+- 打卡、听写、口译自评统计存于浏览器 localStorage，不上传任何数据；听写/口译进度会话级自动保存，刷新不丢。
+
+## 安全约定
+
+- 用户粘贴的原文、远程 RSS 标题等一切非自有数据**只经 `textContent` 进 DOM**，渲染层禁止 `innerHTML`（`main.js` 仅「今日推荐」自有文案一处白名单，由测试锁定）。
+- RSS 条目链接经 `safeUrl` 协议校验，仅放行 http(s)，拦截 `javascript:` / `data:` 等协议。
+- 听写与口译的历史记录为**句级/段级记录**（键 = 会话:序号），同一句重复评分按覆盖计，不重复累计；旧版数字格式自动兼容。
+- 训练台提供「导出练习数据」一键备份（JSON），口译录音可直接下载。
+
+## 测试
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+- `tests/test_update_feeds.py`：RSS 解析与「失败保留旧数据」合并逻辑（网络无关）。
+- `tests/test_site_static.py`：JS 引用的元素 id 必须存在、页内/跨页锚点可达、meta 标签齐全、`innerHTML` 白名单、JS/Python 语法编译。
+- CI：`.github/workflows/test.yml` 在每次 push / PR 自动运行。
+- 浏览器端自检：打开 [selftest.html](https://tanyaqiongcode.github.io/sia-spring2027/selftest.html) 自动运行存储、注入防护、协议校验、记录聚合与录音能力检测，并提供麦克风权限一键测试。
 
 ## 免责声明
 

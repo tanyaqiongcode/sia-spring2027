@@ -1,9 +1,45 @@
 /* 训练台：① 逐句听写工作台（笔试听力）② 口译段落台（只放一遍 + 录音 + 及格制自评）
-   纯前端，音频与录音数据不出本机。 */
+   纯前端，音频与录音数据不出本机。
+   安全约定：全文件不使用 innerHTML；历史存储 v2 = 句级记录（重评按键覆盖，不重复计数）。
+   依赖 assets/main.js 提供 window.SIA（esc/safeUrl/dayAgg）。 */
 (function () {
   "use strict";
 
   var $ = function (s) { return document.querySelector(s); };
+  var SIA = window.SIA || {};
+
+  function todayKey() {
+    var d = new Date();
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  }
+
+  function readJSON(key, fallback) {
+    try { return JSON.parse(localStorage.getItem(key)) || fallback; } catch (e) { return fallback; }
+  }
+  function writeJSON(key, val) { localStorage.setItem(key, JSON.stringify(val)); }
+
+  /* ---------- 数据导出（全部 sia-* 键 + 当前会话） ---------- */
+  var exportBtn = $("#btn-export");
+  if (exportBtn) {
+    exportBtn.addEventListener("click", function () {
+      var payload = { exported: new Date().toISOString(), site: "sia-spring2027", data: {} };
+      for (var i = 0; i < localStorage.length; i++) {
+        var k = localStorage.key(i);
+        if (k && k.indexOf("sia-") === 0) {
+          try { payload.data[k] = JSON.parse(localStorage.getItem(k)); } catch (e) { payload.data[k] = localStorage.getItem(k); }
+        }
+      }
+      var blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement("a");
+      a.href = url;
+      a.download = "sia-练习数据-" + todayKey() + ".json";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(function () { URL.revokeObjectURL(url); }, 5000);
+    });
+  }
 
   /* ================= ① 听写工作台 ================= */
   var audio = $("#audio");
@@ -12,6 +48,8 @@
     var idx = 0;
     var loopOn = false;
     var ptA = null, ptB = null;
+    var sessionId = "s" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+    var SESSION_KEY = "sia-dictation-session";
 
     function loadFile(file) {
       if (!file) return;
@@ -32,13 +70,39 @@
       loadFile(e.dataTransfer.files[0]);
     });
 
+    /* ----- 会话持久化：进度刷新不丢 ----- */
+    function saveSession() {
+      try {
+        writeJSON(SESSION_KEY, {
+          sessionId: sessionId,
+          idx: idx,
+          lines: lines.map(function (l) { return { text: l.text, status: l.status }; }),
+        });
+      } catch (e) {}
+    }
+    (function restoreSession() {
+      var saved = readJSON(SESSION_KEY, null);
+      if (saved && saved.lines && saved.lines.length) {
+        lines = saved.lines;
+        idx = saved.idx || 0;
+        sessionId = saved.sessionId || sessionId;
+        $("#bench-body").style.display = "";
+        $("#file-hint").textContent = "已恢复上次听写进度（" + lines.length + " 句）——音频不会自动恢复，请重新拖入同一段音频继续。";
+        renderList();
+        showCurrent();
+      }
+    })();
+
     $("#load-text").addEventListener("click", function () {
       var raw = $("#transcript").value;
-      lines = raw.split("\n").map(function (s) { return s.trim(); })
+      var next = raw.split("\n").map(function (s) { return s.trim(); })
         .filter(function (s) { return s.length > 0; })
         .map(function (s) { return { text: s, status: null }; });
-      if (!lines.length) { alert("请先粘贴原文，每行一句。"); return; }
+      if (!next.length) { alert("请先粘贴原文，每行一句。"); return; }
+      lines = next;
       idx = 0;
+      sessionId = "s" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+      saveSession();
       renderList();
       showCurrent();
       $("#bench-body").style.display = "";
@@ -67,12 +131,10 @@
         audio.currentTime = ptA;
       }
     });
-    audio.addEventListener("play", function () { if ($("#btn-play")) $("#btn-play").textContent = "⏸ 暂停"; });
-    audio.addEventListener("pause", function () { if ($("#btn-play")) $("#btn-play").textContent = "▶ 播放"; });
 
     function renderList() {
       var box = $("#line-list");
-      box.innerHTML = "";
+      box.textContent = "";
       lines.forEach(function (l, i) {
         var icon = l.status === "ok" ? "✅" : l.status === "close" ? "🟡" : l.status === "miss" ? "❌" : "·";
         var div = document.createElement("div");
@@ -82,6 +144,10 @@
         div.addEventListener("click", function () { idx = i; showCurrent(); });
         box.appendChild(div);
       });
+      refreshProgress();
+    }
+
+    function refreshProgress() {
       var done = lines.filter(function (l) { return l.status; }).length;
       var ok = lines.filter(function (l) { return l.status === "ok"; }).length;
       var close = lines.filter(function (l) { return l.status === "close"; }).length;
@@ -93,7 +159,12 @@
       var cur = lines[idx];
       $("#idx-label").textContent = "第 " + (idx + 1) + " / " + lines.length + " 句";
       $("#answer-input").value = "";
-      $("#answer-box").innerHTML = '<div class="empty">听完后点「对答案」查看原文（或按 Enter 提交你的听写）</div>';
+      var box = $("#answer-box");
+      box.textContent = "";
+      var empty = document.createElement("div");
+      empty.className = "empty";
+      empty.textContent = "听完后点「对答案」查看原文";
+      box.appendChild(empty);
       $("#mark-btns").style.display = "none";
       renderList();
       $("#answer-input").focus();
@@ -101,7 +172,12 @@
 
     function reveal() {
       var cur = lines[idx];
-      $("#answer-box").innerHTML = '<div class="answer">' + cur.text + "</div>";
+      var box = $("#answer-box");
+      box.textContent = "";
+      var ans = document.createElement("div");
+      ans.className = "answer";
+      ans.textContent = cur.text;   // 用户粘贴的原文：只经 textContent 进 DOM，杜绝注入
+      box.appendChild(ans);
       $("#mark-btns").style.display = "";
     }
     $("#btn-reveal").addEventListener("click", reveal);
@@ -113,41 +189,60 @@
     $("#answer-input").addEventListener("keydown", function (e) {
       if (e.key === "Enter") { e.preventDefault(); reveal(); }
     });
-    $("#answer-box").addEventListener("click", reveal);
+    $("#answer-box").addEventListener("click", function (e) {
+      if (e.target.closest(".answer")) reveal();
+    });
+
+    /* ----- 句级记录：键 = 会话:句号，重评覆盖，不重复累计 ----- */
+    function saveMark(lineIdx, status) {
+      var store = readJSON("sia-dictation", {});
+      var day = store[todayKey()] || {};
+      if (!day.marks) day.marks = {};
+      day.marks[sessionId + ":" + lineIdx] = status;
+      store[todayKey()] = day;
+      writeJSON("sia-dictation", store);
+      renderHist();
+    }
 
     function mark(status) {
+      if (!lines.length) return;
       lines[idx].status = status;
-      saveHistory(status);
+      saveMark(idx, status);
+      saveSession();
       if (idx < lines.length - 1) { idx++; }
       showCurrent();
     }
     $("#m-ok").addEventListener("click", function () { mark("ok"); });
     $("#m-close").addEventListener("click", function () { mark("close"); });
     $("#m-miss").addEventListener("click", function () { mark("miss"); });
-    $("#btn-prev").addEventListener("click", function () { if (idx > 0) { idx--; showCurrent(); } });
-    $("#btn-next").addEventListener("click", function () { if (idx < lines.length - 1) { idx++; showCurrent(); } });
+    $("#btn-prev").addEventListener("click", function () { if (idx > 0) { idx--; saveSession(); showCurrent(); } });
+    $("#btn-next").addEventListener("click", function () { if (idx < lines.length - 1) { idx++; saveSession(); showCurrent(); } });
 
-    function histStore() { try { return JSON.parse(localStorage.getItem("sia-dictation") || "{}"); } catch (e) { return {}; } }
-    function saveHistory(status) {
-      var store = histStore();
-      var k = new Date().toISOString().slice(0, 10);
-      var s = store[k] || { ok: 0, close: 0, miss: 0 };
-      s[status]++;
-      store[k] = s;
-      localStorage.setItem("sia-dictation", JSON.stringify(store));
-      renderHist();
-    }
     function renderHist() {
-      var store = histStore();
+      var store = readJSON("sia-dictation", {});
       var days = Object.keys(store).sort().slice(-7).reverse();
-      var html = "";
+      var row = $("#hist");
+      row.textContent = "";
       days.forEach(function (d) {
-        var s = store[d];
-        var total = s.ok + s.close + s.miss;
-        var acc = total ? Math.round((s.ok + s.close * 0.5) / total * 100) : 0;
-        html += '<div class="stat"><b>' + acc + "%</b><span>" + d.slice(5) + " · " + total + " 句</span></div>";
+        var agg = (SIA.dayAgg || function (s) { return s; })(store[d]);
+        var total = agg.ok + agg.close + agg.miss;
+        var acc = total ? Math.round((agg.ok + agg.close * 0.5) / total * 100) : 0;
+        var cell = document.createElement("div");
+        cell.className = "stat";
+        var b = document.createElement("b");
+        b.textContent = acc + "%";
+        var span = document.createElement("span");
+        span.textContent = d.slice(5) + " · " + total + " 句";
+        cell.appendChild(b);
+        cell.appendChild(span);
+        row.appendChild(cell);
       });
-      $("#hist").innerHTML = html || '<p class="small">完成第一句听写后，这里会出现最近 7 天的正确率。</p>';
+      if (!days.length) {
+        var p = document.createElement("p");
+        p.className = "small";
+        p.textContent = "完成第一句听写后，这里会出现最近 7 天的正确率。";
+        row.appendChild(p);
+      }
     }
     renderHist();
 
@@ -166,6 +261,54 @@
     var playCount = 0;
     var segments = [];       // { status: null|'pass'|'fail', note: "" }
     var recorder = null, chunks = [];
+    var oralSessionId = "o" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+    var ORAL_SESSION_KEY = "sia-oral-session";
+
+    function oSaveSession() {
+      try {
+        writeJSON(ORAL_SESSION_KEY, {
+          sessionId: oralSessionId,
+          segments: segments,
+        });
+      } catch (e) {}
+    }
+
+    function renderSegs() {
+      var box = $("#oline-list");
+      if (!segments.length) {
+        box.textContent = "载入音频后，每播放一遍计为一段。";
+      } else {
+        box.textContent = "";
+        segments.forEach(function (s, i) {
+          var div = document.createElement("div");
+          var icon = s.status === "pass" ? "✅" : s.status === "fail" ? "❌" : "⏳";
+          div.textContent = icon + " 第 " + (i + 1) + " 遍" + (s.note ? " · " + s.note : "");
+          if (i === segments.length - 1) { div.style.fontWeight = "700"; div.style.color = "var(--ink)"; }
+          box.appendChild(div);
+        });
+      }
+      var pass = segments.filter(function (s) { return s.status === "pass"; }).length;
+      var fail = segments.filter(function (s) { return s.status === "fail"; }).length;
+      var done = pass + fail;
+      $("#opass").textContent = pass;
+      $("#ofail").textContent = fail;
+      $("#oratio").textContent = done ? Math.round(pass / done * 100) + "%" : "--";
+    }
+
+    // 会话恢复（进度刷新不丢段落与笔记）
+    (function oRestore() {
+      var saved = readJSON(ORAL_SESSION_KEY, null);
+      if (saved && saved.segments && saved.segments.length) {
+        segments = saved.segments;
+        oralSessionId = saved.sessionId || oralSessionId;
+        playCount = segments.length;
+        $("#oplay-count").textContent = playCount;
+        $("#oral-body").style.display = "";
+        $("#oral-empty").style.display = "none";
+        $("#oral-hint").textContent = "已恢复上次口译练习（" + segments.length + " 段）——音频不会自动恢复，请重新拖入同一段音频。";
+        renderSegs();
+      }
+    })();
 
     function oLoad(file) {
       if (!file) return;
@@ -177,6 +320,8 @@
       segments = [];
       playCount = 0;
       $("#oplay-count").textContent = "0";
+      oralSessionId = "o" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+      oSaveSession();
       renderSegs();
     }
     $("#oral-file").addEventListener("change", function (e) { oLoad(e.target.files[0]); });
@@ -205,6 +350,7 @@
       $("#oplay-count").textContent = playCount;
       segments.push({ status: null, note: "" });
       $("#onote").value = "";
+      oSaveSession();
       renderSegs();
       oralAudio.play();
     });
@@ -216,7 +362,7 @@
       }
     });
 
-    // 录音（本地 Blob，不上传）
+    // 录音（本地 Blob，不上传；提供下载）
     $("#obtn-rec").addEventListener("click", function () {
       if (recorder && recorder.state === "recording") {
         recorder.stop();
@@ -232,13 +378,31 @@
         recorder.ondataavailable = function (e) { if (e.data.size) chunks.push(e.data); };
         recorder.onstop = function () {
           stream.getTracks().forEach(function (t) { t.stop(); });
-          var blob = new Blob(chunks, { type: recorder.mimeType || "audio/webm" });
+          var mime = recorder.mimeType || "audio/webm";
+          var blob = new Blob(chunks, { type: mime });
           var url = URL.createObjectURL(blob);
-          $("#orec-playback").innerHTML =
-            '<p class="small" style="margin:6px 0 4px">🎙 你的口译录音（先回放原音，再听自己这段）：</p>' +
-            '<audio controls style="width:100%" src="' + url + '"></audio>';
+          var box = $("#orec-playback");
+          box.textContent = "";
+          var hint = document.createElement("p");
+          hint.className = "small";
+          hint.style.margin = "6px 0 4px";
+          hint.textContent = "🎙 你的口译录音（先回放原音，再听自己这段）：";
+          var player = document.createElement("audio");
+          player.controls = true;
+          player.style.width = "100%";
+          player.src = url;
+          var dl = document.createElement("a");
+          dl.href = url;
+          dl.download = "口译录音-" + todayKey() + "-" + String(segments.length).padStart(2, "0") +
+            (mime.indexOf("mp4") >= 0 ? ".m4a" : ".webm");
+          dl.textContent = "⬇️ 下载本段录音";
+          dl.style.display = "inline-block";
+          dl.style.marginTop = "6px";
+          box.appendChild(hint);
+          box.appendChild(player);
+          box.appendChild(dl);
           $("#obtn-rec").textContent = "🎙 开始录音";
-          $("#orec-hint").textContent = "已生成录音，仅存在本机";
+          $("#orec-hint").textContent = "已生成录音，仅存在本机，可下载备份";
         };
         recorder.start();
         $("#obtn-rec").textContent = "⏹ 停止录音";
@@ -248,48 +412,27 @@
       });
     });
 
-    function renderSegs() {
-      var box = $("#oline-list");
-      if (!segments.length) {
-        box.innerHTML = "载入音频后，每播放一遍计为一段。";
-      } else {
-        box.innerHTML = "";
-        segments.forEach(function (s, i) {
-          var div = document.createElement("div");
-          div.textContent = (s.status === "pass" ? "✅" : s.status === "fail" ? "❌" : "⏳") +
-            " 第 " + (i + 1) + " 遍" + (s.note ? " · " + s.note : "");
-          if (i === segments.length - 1) { div.style.fontWeight = "700"; div.style.color = "var(--ink)"; }
-          box.appendChild(div);
-        });
-      }
-      var pass = segments.filter(function (s) { return s.status === "pass"; }).length;
-      var fail = segments.filter(function (s) { return s.status === "fail"; }).length;
-      var done = pass + fail;
-      $("#opass").textContent = pass;
-      $("#ofail").textContent = fail;
-      $("#oratio").textContent = done ? Math.round(pass / done * 100) + "%" : "--";
+    /* ----- 段级记录：键 = 会话:段号，重评覆盖，不重复累计 ----- */
+    function saveSegMark(segIdx, status) {
+      var store = readJSON("sia-oral", {});
+      var day = store[todayKey()] || {};
+      if (!day.marks) day.marks = {};
+      day.marks[oralSessionId + ":" + segIdx] = status;
+      store[todayKey()] = day;
+      writeJSON("sia-oral", store);
     }
 
     function markSeg(status) {
       if (!segments.length) { alert("先播放一遍再标记。"); return; }
-      var cur = segments[segments.length - 1];
-      cur.status = status;
-      cur.note = $("#onote").value.trim();
-      saveDay(status);
+      var i = segments.length - 1;
+      segments[i].status = status;
+      segments[i].note = $("#onote").value.trim();
+      saveSegMark(i, status);
+      oSaveSession();
       renderSegs();
     }
     $("#omark-pass").addEventListener("click", function () { markSeg("pass"); });
     $("#omark-fail").addEventListener("click", function () { markSeg("fail"); });
     $("#onext").addEventListener("click", function () { $("#obtn-once").click(); });
-
-    function saveDay(status) {
-      var store = {};
-      try { store = JSON.parse(localStorage.getItem("sia-oral") || "{}"); } catch (e) {}
-      var k = new Date().toISOString().slice(0, 10);
-      var s = store[k] || { pass: 0, fail: 0 };
-      s[status]++;
-      store[k] = s;
-      localStorage.setItem("sia-oral", JSON.stringify(store));
-    }
   }
 })();

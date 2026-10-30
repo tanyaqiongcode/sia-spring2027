@@ -6,6 +6,12 @@
 <title>训练台 · 高级口译通关营</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
 <link rel="stylesheet" href="assets/style.css">
+<meta name="description" content="听写工作台与口译段落台：逐句听写、只放一遍模拟、录音对比下载、及格率统计，数据全程不出本机。">
+<meta property="og:site_name" content="高级口译通关营">
+<meta property="og:title" content="训练台 · 高级口译通关营">
+<meta property="og:description" content="听写工作台与口译段落台：逐句听写、只放一遍模拟、录音对比下载、及格率统计，数据全程不出本机。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tanyaqiongcode.github.io/sia-spring2027/practice.html">
 </head>
 <body>
 <header class="topbar"><div class="topbar-inner">
@@ -18,6 +24,7 @@
     <a href="oral.html">口试训练</a>
     <a href="practice.html">训练台</a>
     <a href="materials.html">资源库</a>
+    <a href="selftest.html">自检</a>
   </nav>
 </div></header>
 
@@ -27,6 +34,8 @@
   <p class="lead">两个纯前端工具，<b>音频和录音全程不出本机</b>。听写台把任何音频变成逐句精听（配笔试听力）；口译段落台模拟考场「只放一遍 + 即刻开口 + 录音复盘」（配口试与听译）。</p>
   <p class="lead">素材建议：《高级听力教程》《高级口译教程》官方音频（<a href="materials.html">获取渠道见资源库</a>），或真题音频。录音仅用于当场回放，不会被上传。</p>
 </section>
+
+<div class="callout">🧰 练习进度、听写与口译记录都保存在本机浏览器。换设备或清理浏览器前，点 <button id="btn-export" style="padding:2px 10px;border-radius:8px;border:1px solid var(--line);background:var(--card);cursor:pointer;font-size:13px">⬇️ 导出练习数据</button> 备份（JSON）。工具逻辑自检见 <a href="selftest.html">自检页</a>。</div>
 
 <h2 id="dictation">🎧 听写工作台</h2>
 <p class="sub">用法：拖入音频 → 粘贴原文（每行一句）→ 逐句听写 → 对答案 → 标记对错。支持变速与 A-B 循环。</p>
@@ -147,8 +156,10 @@
 
 <footer>
   <p><b>高级口译通关营</b> · 纯前端工具，音频与录音全程不出本机。</p>
+  <p>考试结构、日期与费用以 <a href="https://www.shwyky.net" target="_blank" rel="noopener">上海外语口译证书考试网</a> 当年官方通知为准。</p>
 </footer>
 
+<script src="assets/main.js"></script>
 <script src="assets/practice.js"></script>
 </body>
 </html>

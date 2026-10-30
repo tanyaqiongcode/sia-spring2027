@@ -1,17 +1,12 @@
 {
-  "updated": "2026-10-30T06:22:29.600643+00:00",
+  "updated": "2026-10-30T18:36:03.295381+00:00",
+  "partial": true,
   "feeds": [
     {
       "id": "bbc-globalnews",
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
-        {
-          "title": "Venezuelan opposition leader criticises US oil deal",
-          "link": "http://www.bbc.co.uk/programmes/p0pkds06",
-          "date": "Fri, 30 Oct 2026 05:57:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkdh9g.mp3"
-        },
         {
           "title": "Deadly Russian drone hits Ukrainian railway station",
           "link": "http://www.bbc.co.uk/programmes/p0pk9z25",
@@ -53,14 +48,27 @@
           "link": "http://www.bbc.co.uk/programmes/p0pjpv9t",
           "date": "Tue, 27 Oct 2026 00:01:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjptfq.mp3"
+        },
+        {
+          "title": "Leaderless student movement wins Serbian election",
+          "link": "http://www.bbc.co.uk/programmes/p0pjpv1c",
+          "date": "Mon, 26 Oct 2026 16:31:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjptg9.mp3"
         }
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "cnn10",
       "name": "CNN 10",
       "url": "https://feeds.megaphone.fm/WMHY2232473209",
       "items": [
+        {
+          "title": "The Spooktacular History Behind Halloween, Explained",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2832696316.mp3",
+          "date": "Fri, 30 Oct 2026 16:08:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2832696316.mp3"
+        },
         {
           "title": "Spain Investigates Deadly Collision Between Two High-Speed Trains",
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY6399124938.mp3",
@@ -102,12 +110,6 @@
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2051038333.mp3",
           "date": "Wed, 21 Oct 2026 13:15:00 -0000",
           "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2051038333.mp3"
-        },
-        {
-          "title": "A New Mars Mission Aims to Uncover the Mysteries of Its Moons",
-          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3623762219.mp3",
-          "date": "Tue, 20 Oct 2026 12:42:00 -0000",
-          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3623762219.mp3"
         }
       ]
     },
@@ -116,6 +118,12 @@
       "name": "BBC Business Daily",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/bizdaily/rss.xml",
       "items": [
+        {
+          "title": "Power Players special: Searching for answers on Google",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8gc8",
+          "date": "Fri, 30 Oct 2026 16:16:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkhq5d.mp3"
+        },
         {
           "title": "Taking Stock: Anthropic's mega-IPO, US mid-term battle and peak pumpkin spice",
           "link": "http://www.bbc.co.uk/programmes/w3ct8gb5",
@@ -157,12 +165,6 @@
           "link": "http://www.bbc.co.uk/programmes/w3ct8gm0",
           "date": "Wed, 21 Oct 2026 12:06:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0phsqxz.mp3"
-        },
-        {
-          "title": "Founders: Olio CEO Tessa Clarke's fight against food waste",
-          "link": "http://www.bbc.co.uk/programmes/w3ct98sm",
-          "date": "Tue, 20 Oct 2026 20:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0phnd4b.mp3"
         }
       ]
     },
@@ -172,50 +174,50 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
-          "title": "北方边城的风声和鸟鸣",
-          "link": "https://www.ftchinese.com/story/001111232",
+          "title": "“洋流”兴起：搅动台北选局——兼比较“洋流”与“韩流”",
+          "link": "https://www.ftchinese.com/story/001111244",
           "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "“Fotografiska风格”是如何形成的？",
-          "link": "https://www.ftchinese.com/story/001111228",
+          "title": "卢拉：政坛常青 励志传奇",
+          "link": "https://www.ftchinese.com/story/001111245",
           "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "“联系成员国”争端给加欧峰会蒙上阴影",
-          "link": "https://www.ftchinese.com/story/001111236",
+          "title": "伯纳姆上任以来的英中关系走向",
+          "link": "https://www.ftchinese.com/story/001111240",
           "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "内塔尼亚胡所属政党声称选举被“窃取”",
-          "link": "https://www.ftchinese.com/story/001111235",
+          "title": "深陷危机的德国联盟党何去何从？",
+          "link": "https://www.ftchinese.com/story/001111242",
           "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "草间弥生：走过折磨与抗争，留下慰藉",
-          "link": "https://www.ftchinese.com/story/001111233",
+          "title": "在波动市场环境下 中国平安前9个月营业利润仍增长8.3%",
+          "link": "https://www.ftchinese.com/story/001111243",
           "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "“听众不必在几分钟内彻底弄懂一首诗”",
-          "link": "https://www.ftchinese.com/story/001111229",
+          "title": "香港PE集团收购恒大物业控股权",
+          "link": "https://www.ftchinese.com/story/001111241",
           "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "3.4%：美国经济第三季度年化增速超预期",
-          "link": "https://www.ftchinese.com/story/001111234",
+          "title": "当孔子学院成为大国竞争的符号",
+          "link": "https://www.ftchinese.com/story/001111239",
           "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "当教育不再让人“刀枪不入”，该如何理解成功、牺牲和责任？",
-          "link": "https://www.ftchinese.com/story/001111230",
+          "title": "大选后，“金砖之父”奥尼尔如何看巴西前景？",
+          "link": "https://www.ftchinese.com/story/001111238",
           "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         }

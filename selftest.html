@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自检 · 高级口译通关营</title>
+<meta name="description" content="训练台工具的浏览器内自检：存储读写、HTML 注入防护、RSS 链接协议校验、句级记录聚合、录音能力。">
+<meta property="og:site_name" content="高级口译通关营">
+<meta property="og:title" content="自检 · 高级口译通关营">
+<meta property="og:description" content="训练台工具的浏览器内自检：存储读写、HTML 注入防护、RSS 链接协议校验、句级记录聚合、录音能力。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tanyaqiongcode.github.io/sia-spring2027/selftest.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner">
+  <a class="brand" href="index.html">高级口译 <span>通关营</span></a>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="exam.html">考试全解</a>
+    <a href="roadmap.html">路线图</a>
+    <a href="written.html">笔试训练</a>
+    <a href="oral.html">口试训练</a>
+    <a href="practice.html">训练台</a>
+    <a href="materials.html">资源库</a>
+    <a href="selftest.html">自检</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+  <h1>工具自检</h1>
+  <p class="lead">在当前浏览器里验证训练台的关键能力：<b>存储读写、注入防护、链接协议校验、记录聚合、录音支持</b>。打开页面自动运行，全部 ✅ 说明本机环境可正常使用训练台。</p>
+</section>
+
+<h2>自动检测</h2>
+<div class="card"><div id="results"><p class="small">正在运行…</p></div></div>
+
+<h2>手动检测：麦克风权限</h2>
+<div class="card">
+  <p class="small" style="margin-top:0">口译段落台的录音依赖浏览器麦克风权限。点下面按钮请求一次权限（浏览器可能弹窗，选「允许」）：</p>
+  <div class="bench-controls">
+    <button id="btn-mic">🎤 测试麦克风权限</button>
+    <span class="marks" id="mic-result">未测试</span>
+  </div>
+</div>
+
+<h2>说明</h2>
+<div class="grid c2">
+  <div class="card"><h3>检查什么</h3><ul>
+    <li><b>存储</b>：localStorage 可写可读可删——打卡、听写、口译记录都靠它。</li>
+    <li><b>注入防护</b>：粘贴的原文与 RSS 标题只经 textContent 进 DOM；链接只放行 http(s)。</li>
+    <li><b>记录聚合</b>：同一句/段重复评分按记录键覆盖，不重复累计。</li>
+    <li><b>录音</b>：MediaRecorder 可用性与麦克风授权。</li>
+  </ul></div>
+  <div class="card"><h3>遇到 ❌ 怎么办</h3><ul>
+    <li>存储 ❌：浏览器开了无痕/隐私模式或禁用了站点数据——换普通模式。</li>
+    <li>录音 ❌：换 Chrome / Edge / Safari 最新版，或在地址栏站点设置里允许麦克风。</li>
+    <li>其余 ❌：清缓存强刷（Cmd/Ctrl+Shift+R）；仍失败请到 <a href="https://github.com/tanyaqiongcode/sia-spring2027/issues" target="_blank" rel="noopener">仓库提 Issue</a>。</li>
+  </ul></div>
+</div>
+
+</main>
+
+<footer>
+  <p><b>高级口译通关营</b> · 纯前端自检，不上传任何数据。</p>
+  <p>考试信息以 <a href="https://www.shwyky.net" target="_blank" rel="noopener">上海外语口译证书考试网</a> 当年官方通知为准。</p>
+</footer>
+
+<script src="assets/main.js"></script>
+<script src="assets/practice.js"></script>
+<script>
+(function () {
+  "use strict";
+  var SIA = window.SIA || {};
+  var results = [];
+  function check(name, ok, detail) {
+    results.push({ name: name, ok: !!ok, detail: detail || "" });
+  }
+
+  // 1. localStorage 读写删
+  try {
+    var k = "sia-selftest";
+    localStorage.setItem(k, "ok1");
+    var v = localStorage.getItem(k) === "ok1";
+    localStorage.removeItem(k);
+    var gone = localStorage.getItem(k) === null;
+    check("存储读写删（localStorage）", v && gone);
+  } catch (e) { check("存储读写删（localStorage）", false, String(e)); }
+
+  // 2. HTML 转义
+  try {
+    var payload = '<img src=x onerror=alert(1)>';
+    var escaped = SIA.esc ? SIA.esc(payload) : "";
+    check("HTML 转义（esc）", escaped.indexOf("<") === -1 && escaped.indexOf("onerror") > -1, escaped.slice(0, 40));
+  } catch (e) { check("HTML 转义（esc）", false, String(e)); }
+
+  // 3. textContent 不产生元素（原文注入防线）
+  try {
+    var holder = document.createElement("div");
+    holder.textContent = "<svg onload=alert(1)>";
+    check("textContent 注入防线", holder.children.length === 0 && holder.textContent.indexOf("svg") > -1);
+  } catch (e) { check("textContent 注入防线", false, String(e)); }
+
+  // 4. RSS 链接协议校验
+  try {
+    var okHttps = SIA.safeUrl("https://example.com/a.mp3") === "https://example.com/a.mp3";
+    var okHttp = SIA.safeUrl("http://example.com/") !== null;
+    var blockedJs = SIA.safeUrl("javascript:alert(1)") === null;
+    var blockedData = SIA.safeUrl("data:text/html,<script>alert(1)<\/script>") === null;
+    var rel = SIA.safeUrl("episode/1.mp3", "https://feeds.example.com/pod.rss");
+    var okRel = rel === "https://feeds.example.com/episode/1.mp3";
+    check("RSS 链接协议校验（safeUrl）", okHttps && okHttp && blockedJs && blockedData && okRel,
+      "js/data 协议拦截：" + blockedJs + "/" + blockedData);
+  } catch (e) { check("RSS 链接协议校验（safeUrl）", false, String(e)); }
+
+  // 5. 句级记录聚合：重评覆盖不重复计数
+  try {
+    var day = { marks: { "s1:0": "ok", "s1:1": "miss" } };
+    var first = SIA.dayAgg(day);
+    // 同一句重评为 close：覆盖原键
+    day.marks["s1:0"] = "close";
+    var second = SIA.dayAgg(day);
+    // 旧版数字格式兼容
+    var legacy = SIA.dayAgg({ ok: 3, close: 1, miss: 1 });
+    var okAgg = first.ok === 1 && first.miss === 1 &&
+      second.ok === 0 && second.close === 1 && second.miss === 1 &&
+      legacy.ok === 3 && legacy.close === 1;
+    check("记录聚合：重评覆盖 + 旧格式兼容", okAgg,
+      "重评后 ok=" + second.ok + " close=" + second.close + "（期望 0/1）");
+  } catch (e) { check("记录聚合：重评覆盖 + 旧格式兼容", false, String(e)); }
+
+  // 6. MediaRecorder 可用性
+  check("录音 API（MediaRecorder）", typeof window.MediaRecorder !== "undefined",
+    typeof window.MediaRecorder !== "undefined" ? "支持" : "此浏览器不支持，请换 Chrome/Edge/Safari");
+
+  // 7. fetch 本地数据
+  fetch("data/latest.json", { cache: "no-store" })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (j) { check("每日素材数据（latest.json）", !!(j && j.feeds && j.feeds.length)); paint(); })
+    .catch(function () { check("每日素材数据（latest.json）", false, "抓取失败"); paint(); });
+
+  function paint() {
+    var box = document.getElementById("results");
+    box.textContent = "";
+    var okAll = true;
+    var ul = document.createElement("ul");
+    ul.style.paddingLeft = "20px";
+    ul.style.margin = "6px 0 0";
+    results.forEach(function (r) {
+      if (!r.ok) okAll = false;
+      var li = document.createElement("li");
+      li.textContent = (r.ok ? "✅ " : "❌ ") + r.name + (r.detail && !r.ok ? " —— " + r.detail : "");
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+    var verdict = document.createElement("p");
+    verdict.className = okAll ? "pf-verdict good" : "pf-verdict bad";
+    verdict.textContent = okAll ? "✅ 全部通过，本机环境可以正常使用训练台。" : "❌ 有未通过项，按上面说明处理后再使用。";
+    box.appendChild(verdict);
+  }
+  paint();
+
+  // 手动：麦克风权限
+  document.getElementById("btn-mic").addEventListener("click", function () {
+    var out = document.getElementById("mic-result");
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+      out.textContent = "❌ 此浏览器不支持 getUserMedia";
+      return;
+    }
+    out.textContent = "⏳ 请求权限中…";
+    navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+      stream.getTracks().forEach(function (t) { t.stop(); });
+      out.textContent = "✅ 麦克风可用，可以去训练台录音复盘了";
+    }).catch(function (err) {
+      out.textContent = "❌ 未授权（" + (err && err.name ? err.name : "未知") + "）——在浏览器站点设置里允许麦克风";
+    });
+  });
+})();
+</script>
+</body>
+</html>
