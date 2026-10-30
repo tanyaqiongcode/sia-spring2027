@@ -39,6 +39,19 @@
 <div class="callout">🧰 练习进度、听写与口译记录都保存在本机浏览器。换设备或清理浏览器前，点 <button id="btn-export" style="padding:2px 10px;border-radius:8px;border:1px solid var(--line);background:var(--card);cursor:pointer;font-size:13px">⬇️ 导出练习数据</button> 备份（JSON）。工具逻辑自检见 <a href="selftest.html">自检页</a>。</div>
 
 <div class="card" style="margin-bottom:16px">
+  <h3 style="margin-top:0">☁️ 私有音频源 <span class="badge tool">GitHub 私有仓库 · token 只存本机</span></h3>
+  <p class="small" style="margin:0 0 10px">音频存在你的<b>私有 GitHub 仓库</b>里（务必保持 Private），网站凭你个人的 token 把它们一键同步进「本机音频库」，换设备也能拉。token 建议用 <b>fine-grained</b>：只勾选这一个仓库、权限只给 <b>Contents: Read-only</b>（GitHub → Settings → Developer settings → Fine-grained tokens）。token 只保存在本机浏览器 localStorage，不会上传到本站或任何第三方。</p>
+  <div class="bench-controls">
+    <input id="source-repo" type="text" placeholder="仓库名，如 tanyaqiongcode/sia-audio-private" style="flex:1;min-width:220px">
+    <input id="source-token" type="password" placeholder="GitHub token（只存本机）" style="flex:1;min-width:200px">
+  </div>
+  <div class="bench-controls" style="margin-top:8px">
+    <button id="source-pull" class="primary">☁️ 同步到本机音频库</button>
+    <span class="marks" id="source-status">未同步</span>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom:16px">
   <h3 style="margin-top:0">💾 本机音频库 <span class="badge tool">IndexedDB · 不出本机 · 不进仓库</span></h3>
   <p class="small" style="margin:0 0 10px">官方教程 / 真题音频版权归出版方所有，本站不内置、不存储；但你可以把<b>下载到本机的音频</b>存进自己浏览器的数据库：拖入任一工作台后点「💾 存入本机音频库」，以后打开网站一键载入，无需重复拖文件（通常可存数百 MB，清理浏览器站点数据会删除）。</p>
   <div id="lib-list"><p class="small">正在读取本机音频库…</p></div>

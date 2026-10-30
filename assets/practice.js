@@ -529,7 +529,86 @@
     $("#onext").addEventListener("click", function () { $("#obtn-once").click(); });
   }
 
-  /* ================= ③ 本机音频库管理 ================= */
+  /* ================= ③ 私有音频源（GitHub 私有仓库 → 本机音频库） ================= */
+  if ($("#source-pull")) {
+    var CFG_KEY = "sia-audio-source";
+    var cfg = readJSON(CFG_KEY, {});
+    var srcRepo = $("#source-repo"), srcToken = $("#source-token"), srcStatus = $("#source-status");
+    if (cfg.repo) srcRepo.value = cfg.repo;
+    if (cfg.token) srcToken.value = cfg.token;
+
+    function ghJson(repo, path, token, accept) {
+      return fetch("https://api.github.com/repos/" + repo + path, {
+        headers: { Authorization: "Bearer " + token, Accept: accept || "application/vnd.github+json" },
+      }).then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status + "——检查仓库名、token 与仓库 Private 状态");
+        return r.json();
+      });
+    }
+    function ghRawBlob(repo, path, token) {
+      return fetch("https://api.github.com/repos/" + repo + "/contents/" + encodeURIComponent(path), {
+        headers: { Authorization: "Bearer " + token, Accept: "application/vnd.github.raw" },
+      }).then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status + " " + path);
+        return r.blob();
+      });
+    }
+    function b64ToText(b64) {
+      var bin = atob(b64.replace(/\s/g, ""));
+      var bytes = new Uint8Array(bin.length);
+      for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+      return new TextDecoder("utf-8").decode(bytes);
+    }
+    function saveCfg() {
+      writeJSON(CFG_KEY, { repo: srcRepo.value.trim(), token: srcToken.value.trim() });
+    }
+
+    $("#source-pull").addEventListener("click", function () {
+      var repo = srcRepo.value.trim(), token = srcToken.value.trim();
+      if (!repo || !token) { alert("请先填写仓库名与 token（fine-grained、只读该仓库即可）。"); return; }
+      saveCfg();
+      srcStatus.textContent = "拉取清单中…";
+      ghJson(repo, "/contents/manifest.json", token)
+        .then(function (j) {
+          var manifest = JSON.parse(b64ToText(j.content || ""));
+          return libAll().then(function (rows) {
+            var have = {};
+            rows.forEach(function (r) { have[r.id] = true; });
+            var todo = manifest.files.filter(function (f) { return !(f.name + " · " + f.size in have); });
+            var done = 0, failed = 0;
+            srcStatus.textContent = "待同步 " + todo.length + " / 共 " + manifest.files.length + " 个";
+            if (!todo.length) { srcStatus.textContent = "✅ 本机库已是最新（" + manifest.files.length + " 个）"; return null; }
+            var chain = Promise.resolve();
+            todo.forEach(function (f) {
+              chain = chain.then(function () {
+                return ghRawBlob(repo, f.path, token).then(function (blob) {
+                  return libSave(new File([blob], f.name, { type: "audio/mpeg" }));
+                }).then(function () {
+                  done++;
+                  srcStatus.textContent = "同步中 " + done + "/" + todo.length + (failed ? "（失败 " + failed + "）" : "");
+                  if (hooks.libRender) hooks.libRender();
+                }).catch(function (e) {
+                  failed++;
+                  srcStatus.textContent = "同步中 " + done + "/" + todo.length + "（失败 " + failed + "）";
+                  console.warn("同步失败:", f.path, e);
+                });
+              });
+            });
+            return chain.then(function () {
+              srcStatus.textContent = failed
+                ? "⚠️ 完成，" + done + " 成功 / " + failed + " 失败——点「↻ 刷新列表」查看"
+                : "✅ 全部同步完成：" + done + " 个音频已进入本机音频库";
+              if (hooks.libRender) hooks.libRender();
+            });
+          });
+        })
+        .catch(function (e) {
+          srcStatus.textContent = "❌ " + (e && e.message ? e.message : e);
+        });
+    });
+  }
+
+  /* ================= ④ 本机音频库管理 ================= */
   if ($("#lib-list")) {
     function libRender() {
       libAll().then(function (rows) {
