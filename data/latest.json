@@ -1,11 +1,17 @@
 {
-  "updated": "2026-10-29T17:51:45.679506+00:00",
+  "updated": "2026-10-30T06:22:29.600643+00:00",
   "feeds": [
     {
       "id": "bbc-globalnews",
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
+        {
+          "title": "Venezuelan opposition leader criticises US oil deal",
+          "link": "http://www.bbc.co.uk/programmes/p0pkds06",
+          "date": "Fri, 30 Oct 2026 05:57:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkdh9g.mp3"
+        },
         {
           "title": "Deadly Russian drone hits Ukrainian railway station",
           "link": "http://www.bbc.co.uk/programmes/p0pk9z25",
@@ -47,12 +53,6 @@
           "link": "http://www.bbc.co.uk/programmes/p0pjpv9t",
           "date": "Tue, 27 Oct 2026 00:01:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjptfq.mp3"
-        },
-        {
-          "title": "Leaderless student movement wins Serbian election",
-          "link": "http://www.bbc.co.uk/programmes/p0pjpv1c",
-          "date": "Mon, 26 Oct 2026 16:31:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjptg9.mp3"
         }
       ]
     },
@@ -117,6 +117,12 @@
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/bizdaily/rss.xml",
       "items": [
         {
+          "title": "Taking Stock: Anthropic's mega-IPO, US mid-term battle and peak pumpkin spice",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8gb5",
+          "date": "Thu, 29 Oct 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkbmpz.mp3"
+        },
+        {
           "title": "Power players: Can Meta reinvent itself for the AI age?",
           "link": "http://www.bbc.co.uk/programmes/w3ct8gm6",
           "date": "Wed, 28 Oct 2026 23:01:00 +0000",
@@ -157,12 +163,6 @@
           "link": "http://www.bbc.co.uk/programmes/w3ct98sm",
           "date": "Tue, 20 Oct 2026 20:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0phnd4b.mp3"
-        },
-        {
-          "title": "Follow the Money: The cost of sending money home",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8grj",
-          "date": "Mon, 19 Oct 2026 20:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0phgf4y.mp3"
         }
       ]
     },
@@ -172,51 +172,51 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
-          "title": "香港特首就宏福苑大火致歉",
-          "link": "https://www.ftchinese.com/story/001111231",
-          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "title": "北方边城的风声和鸟鸣",
+          "link": "https://www.ftchinese.com/story/001111232",
+          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "每周时事分析：金正恩访问丹东的影响",
-          "link": "https://www.ftchinese.com/story/001111226",
-          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "title": "“Fotografiska风格”是如何形成的？",
+          "link": "https://www.ftchinese.com/story/001111228",
+          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "卢拉胜选：繁荣的旧梦与左派的黄昏",
-          "link": "https://www.ftchinese.com/story/001111227",
-          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "title": "“联系成员国”争端给加欧峰会蒙上阴影",
+          "link": "https://www.ftchinese.com/story/001111236",
+          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "预测市场把华盛顿搞成了赌场",
-          "link": "https://www.ftchinese.com/story/001111225",
-          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "title": "内塔尼亚胡所属政党声称选举被“窃取”",
+          "link": "https://www.ftchinese.com/story/001111235",
+          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "中国需求减弱影响GSK疫苗销售额",
-          "link": "https://www.ftchinese.com/story/001111224",
-          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "title": "草间弥生：走过折磨与抗争，留下慰藉",
+          "link": "https://www.ftchinese.com/story/001111233",
+          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "在巴黎看见当代艺术市场的多重现实",
-          "link": "https://www.ftchinese.com/story/001111210",
-          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "title": "“听众不必在几分钟内彻底弄懂一首诗”",
+          "link": "https://www.ftchinese.com/story/001111229",
+          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "从星舰到燃机叶片：马斯克争夺AI时代的“通电时间”",
-          "link": "https://www.ftchinese.com/story/001111216",
-          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "title": "3.4%：美国经济第三季度年化增速超预期",
+          "link": "https://www.ftchinese.com/story/001111234",
+          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "为何强制社保引发灵活就业者群体不满？",
-          "link": "https://www.ftchinese.com/story/001111223",
-          "date": "Wed, 28 Oct 2026 16:00:00 GMT",
+          "title": "当教育不再让人“刀枪不入”，该如何理解成功、牺牲和责任？",
+          "link": "https://www.ftchinese.com/story/001111230",
+          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
           "audio": ""
         }
       ]
