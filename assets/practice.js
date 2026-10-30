@@ -537,27 +537,23 @@
     if (cfg.repo) srcRepo.value = cfg.repo;
     if (cfg.token) srcToken.value = cfg.token;
 
-    function ghJson(repo, path, token, accept) {
-      return fetch("https://api.github.com/repos/" + repo + path, {
-        headers: { Authorization: "Bearer " + token, Accept: accept || "application/vnd.github+json" },
+    function ghJson(url, token) {
+      return fetch(url, {
+        headers: { Authorization: "Bearer " + token, Accept: "application/vnd.github+json" },
       }).then(function (r) {
         if (!r.ok) throw new Error("HTTP " + r.status + "——检查仓库名、token 与仓库 Private 状态");
         return r.json();
       });
     }
-    function ghRawBlob(repo, path, token) {
-      return fetch("https://api.github.com/repos/" + repo + "/contents/" + encodeURIComponent(path), {
-        headers: { Authorization: "Bearer " + token, Accept: "application/vnd.github.raw" },
-      }).then(function (r) {
-        if (!r.ok) throw new Error("HTTP " + r.status + " " + path);
-        return r.blob();
-      });
-    }
-    function b64ToText(b64) {
-      var bin = atob(b64.replace(/\s/g, ""));
-      var bytes = new Uint8Array(bin.length);
-      for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
-      return new TextDecoder("utf-8").decode(bytes);
+    function ghBlobB64(repo, sha, token) {
+      // git/blobs 走 git 数据层，不受 contents 缓存影响；返回二进制
+      return ghJson("https://api.github.com/repos/" + repo + "/git/blobs/" + sha, token)
+        .then(function (j) {
+          var bin = atob((j.content || "").replace(/\s/g, ""));
+          var bytes = new Uint8Array(bin.length);
+          for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+          return bytes;
+        });
     }
     function saveCfg() {
       writeJSON(CFG_KEY, { repo: srcRepo.value.trim(), token: srcToken.value.trim() });
@@ -568,21 +564,28 @@
       if (!repo || !token) { alert("请先填写仓库名与 token（fine-grained、只读该仓库即可）。"); return; }
       saveCfg();
       srcStatus.textContent = "拉取清单中…";
-      ghJson(repo, "/contents/manifest.json", token)
+      // git/trees 一次拿全部 blob（path+sha+size），无需 manifest、无 contents 缓存问题
+      ghJson("https://api.github.com/repos/" + repo + "/git/trees/main?recursive=1", token)
         .then(function (j) {
-          var manifest = JSON.parse(b64ToText(j.content || ""));
+          var files = (j.tree || []).filter(function (t) {
+            return t.type === "blob" && /\.mp3$/i.test(t.path) && typeof t.size === "number";
+          });
           return libAll().then(function (rows) {
             var have = {};
             rows.forEach(function (r) { have[r.id] = true; });
-            var todo = manifest.files.filter(function (f) { return !(f.name + " · " + f.size in have); });
+            var todo = files.filter(function (f) {
+              var name = f.path.split("/").pop();
+              return !(name + " · " + f.size in have);
+            });
             var done = 0, failed = 0;
-            srcStatus.textContent = "待同步 " + todo.length + " / 共 " + manifest.files.length + " 个";
-            if (!todo.length) { srcStatus.textContent = "✅ 本机库已是最新（" + manifest.files.length + " 个）"; return null; }
+            srcStatus.textContent = "待同步 " + todo.length + " / 共 " + files.length + " 个";
+            if (!todo.length) { srcStatus.textContent = "✅ 本机库已是最新（" + files.length + " 个）"; return null; }
             var chain = Promise.resolve();
             todo.forEach(function (f) {
               chain = chain.then(function () {
-                return ghRawBlob(repo, f.path, token).then(function (blob) {
-                  return libSave(new File([blob], f.name, { type: "audio/mpeg" }));
+                return ghBlobB64(repo, f.sha, token).then(function (bytes) {
+                  var name = f.path.split("/").pop();
+                  return libSave(new File([new Blob([bytes])], name, { type: "audio/mpeg" }));
                 }).then(function () {
                   done++;
                   srcStatus.textContent = "同步中 " + done + "/" + todo.length + (failed ? "（失败 " + failed + "）" : "");
