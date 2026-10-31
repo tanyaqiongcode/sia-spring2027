@@ -1,12 +1,30 @@
 {
-  "updated": "2026-10-30T18:36:03.295381+00:00",
-  "partial": true,
+  "updated": "2026-10-31T06:12:53.383464+00:00",
+  "partial": false,
   "feeds": [
     {
       "id": "bbc-globalnews",
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
+        {
+          "title": "US approves sale of 500 Patriot missiles to Ukraine",
+          "link": "http://www.bbc.co.uk/programmes/p0pkkxk0",
+          "date": "Sat, 31 Oct 2026 05:01:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkkvq7.mp3"
+        },
+        {
+          "title": "Residents leave devastated Russian-occupied Oleshky",
+          "link": "http://www.bbc.co.uk/programmes/p0pkhvpg",
+          "date": "Fri, 30 Oct 2026 16:51:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkhvcv.mp3"
+        },
+        {
+          "title": "Venezuelan opposition leader criticises US oil deal",
+          "link": "http://www.bbc.co.uk/programmes/p0pkds06",
+          "date": "Fri, 30 Oct 2026 05:57:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkdh9g.mp3"
+        },
         {
           "title": "Deadly Russian drone hits Ukrainian railway station",
           "link": "http://www.bbc.co.uk/programmes/p0pk9z25",
@@ -36,27 +54,8 @@
           "link": "http://www.bbc.co.uk/programmes/p0pjwfwn",
           "date": "Tue, 27 Oct 2026 16:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjw48x.mp3"
-        },
-        {
-          "title": "Israel holds first election since October 7th attacks",
-          "link": "http://www.bbc.co.uk/programmes/p0pjrnd4",
-          "date": "Tue, 27 Oct 2026 05:28:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjrn53.mp3"
-        },
-        {
-          "title": "What's next for China after Xi Jinping?",
-          "link": "http://www.bbc.co.uk/programmes/p0pjpv9t",
-          "date": "Tue, 27 Oct 2026 00:01:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjptfq.mp3"
-        },
-        {
-          "title": "Leaderless student movement wins Serbian election",
-          "link": "http://www.bbc.co.uk/programmes/p0pjpv1c",
-          "date": "Mon, 26 Oct 2026 16:31:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjptg9.mp3"
         }
-      ],
-      "stale": true
+      ]
     },
     {
       "id": "cnn10",
