@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T06:12:53.383464+00:00",
+  "updated": "2026-11-01T06:45:54.074724+00:00",
   "partial": false,
   "feeds": [
     {
@@ -7,6 +7,18 @@
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
+        {
+          "title": "Violent protests in France for the third weekend in a row",
+          "link": "http://www.bbc.co.uk/programmes/p0pkpg0p",
+          "date": "Sun, 01 Nov 2026 04:47:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkpfz4.mp3"
+        },
+        {
+          "title": "The Happy Pod: Personalised cancer vaccine shows promise in major trial",
+          "link": "http://www.bbc.co.uk/programmes/p0pkj52k",
+          "date": "Sat, 31 Oct 2026 12:00:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkj482.mp3"
+        },
         {
           "title": "US approves sale of 500 Patriot missiles to Ukraine",
           "link": "http://www.bbc.co.uk/programmes/p0pkkxk0",
@@ -42,18 +54,6 @@
           "link": "http://www.bbc.co.uk/programmes/p0pk3hmm",
           "date": "Wed, 28 Oct 2026 16:28:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pk3gws.mp3"
-        },
-        {
-          "title": "Israel election too close to call",
-          "link": "http://www.bbc.co.uk/programmes/p0pjz1m1",
-          "date": "Wed, 28 Oct 2026 05:23:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjz1h1.mp3"
-        },
-        {
-          "title": "Huge turnout in Israeli election",
-          "link": "http://www.bbc.co.uk/programmes/p0pjwfwn",
-          "date": "Tue, 27 Oct 2026 16:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjw48x.mp3"
         }
       ]
     },
