@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T06:45:54.074724+00:00",
+  "updated": "2026-11-02T06:44:35.325081+00:00",
   "partial": false,
   "feeds": [
     {
@@ -7,6 +7,12 @@
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
+        {
+          "title": "Trump celebrates shock endorsement ahead of US midterms",
+          "link": "http://www.bbc.co.uk/programmes/p0pksmf2",
+          "date": "Mon, 02 Nov 2026 05:46:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pksm1b.mp3"
+        },
         {
           "title": "Violent protests in France for the third weekend in a row",
           "link": "http://www.bbc.co.uk/programmes/p0pkpg0p",
@@ -48,12 +54,6 @@
           "link": "http://www.bbc.co.uk/programmes/p0pk6j6v",
           "date": "Thu, 29 Oct 2026 05:29:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pk6j15.mp3"
-        },
-        {
-          "title": "Dozens killed in train crash in Spain",
-          "link": "http://www.bbc.co.uk/programmes/p0pk3hmm",
-          "date": "Wed, 28 Oct 2026 16:28:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pk3gws.mp3"
         }
       ]
     },
@@ -118,6 +118,12 @@
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/bizdaily/rss.xml",
       "items": [
         {
+          "title": "Can businesses trust AI?",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8ggq",
+          "date": "Sun, 01 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkc14d.mp3"
+        },
+        {
           "title": "Power Players special: Searching for answers on Google",
           "link": "http://www.bbc.co.uk/programmes/w3ct8gc8",
           "date": "Fri, 30 Oct 2026 16:16:00 +0000",
@@ -158,12 +164,6 @@
           "link": "http://www.bbc.co.uk/programmes/w3ct8g9z",
           "date": "Thu, 22 Oct 2026 17:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pj34xb.mp3"
-        },
-        {
-          "title": "Power players: Has Netflix hit a wall?",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8gm0",
-          "date": "Wed, 21 Oct 2026 12:06:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0phsqxz.mp3"
         }
       ]
     },
@@ -173,51 +173,51 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
-          "title": "“洋流”兴起：搅动台北选局——兼比较“洋流”与“韩流”",
-          "link": "https://www.ftchinese.com/story/001111244",
-          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
+          "title": "一周世界舆论聚焦：中韩关系的进展和中欧关系的僵持",
+          "link": "https://www.ftchinese.com/story/001111254",
+          "date": "Sun, 01 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "卢拉：政坛常青 励志传奇",
-          "link": "https://www.ftchinese.com/story/001111245",
-          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
+          "title": "《给阿嬷的情书》之外的真实下南洋",
+          "link": "https://www.ftchinese.com/story/001111246",
+          "date": "Sun, 01 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "伯纳姆上任以来的英中关系走向",
-          "link": "https://www.ftchinese.com/story/001111240",
-          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
+          "title": "英阿主权争端助长南大西洋“无序捕捞”",
+          "link": "https://www.ftchinese.com/story/001111253",
+          "date": "Sun, 01 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "深陷危机的德国联盟党何去何从？",
-          "link": "https://www.ftchinese.com/story/001111242",
-          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
+          "title": "FT社评：美国需要一届真正的国会",
+          "link": "https://www.ftchinese.com/story/001111252",
+          "date": "Sun, 01 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "在波动市场环境下 中国平安前9个月营业利润仍增长8.3%",
-          "link": "https://www.ftchinese.com/story/001111243",
-          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
+          "title": "卢拉意外胜选导致农产品价格大跌",
+          "link": "https://www.ftchinese.com/story/001111251",
+          "date": "Sun, 01 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "香港PE集团收购恒大物业控股权",
-          "link": "https://www.ftchinese.com/story/001111241",
-          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
+          "title": "如果勒庞当选？——法国对华经济政策环境变化前瞻",
+          "link": "https://www.ftchinese.com/story/001111250",
+          "date": "Sun, 01 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "当孔子学院成为大国竞争的符号",
-          "link": "https://www.ftchinese.com/story/001111239",
-          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
+          "title": "彼得•汤姆森：海洋母亲教会我如何看待我们的未来",
+          "link": "https://www.ftchinese.com/story/001111237",
+          "date": "Sat, 31 Oct 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "大选后，“金砖之父”奥尼尔如何看巴西前景？",
-          "link": "https://www.ftchinese.com/story/001111238",
-          "date": "Thu, 29 Oct 2026 16:00:00 GMT",
+          "title": "不愿进入“字节时间”的互联网巨头",
+          "link": "https://www.ftchinese.com/story/001111249",
+          "date": "Sat, 31 Oct 2026 16:00:00 GMT",
           "audio": ""
         }
       ]
