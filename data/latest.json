@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-02T06:44:35.325081+00:00",
-  "partial": false,
+  "updated": "2026-11-03T07:12:13.131563+00:00",
+  "partial": true,
   "feeds": [
     {
       "id": "bbc-globalnews",
@@ -55,13 +55,20 @@
           "date": "Thu, 29 Oct 2026 05:29:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pk6j15.mp3"
         }
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "cnn10",
       "name": "CNN 10",
       "url": "https://feeds.megaphone.fm/WMHY2232473209",
       "items": [
+        {
+          "title": "FBI: North Korea Behind World’s Largest Cryptocurrency Heist",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY5058391250.mp3",
+          "date": "Mon, 02 Nov 2026 19:22:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY5058391250.mp3"
+        },
         {
           "title": "The Spooktacular History Behind Halloween, Explained",
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2832696316.mp3",
@@ -103,12 +110,6 @@
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY9046817687.mp3",
           "date": "Thu, 22 Oct 2026 12:22:00 -0000",
           "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY9046817687.mp3"
-        },
-        {
-          "title": "Why a Surprise Blood Clot Diagnosis Is Sidelining One of the Nfl’s Biggest Stars",
-          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2051038333.mp3",
-          "date": "Wed, 21 Oct 2026 13:15:00 -0000",
-          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2051038333.mp3"
         }
       ]
     },
@@ -165,7 +166,8 @@
           "date": "Thu, 22 Oct 2026 17:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pj34xb.mp3"
         }
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "ft-bilingual",
@@ -173,51 +175,51 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
-          "title": "一周世界舆论聚焦：中韩关系的进展和中欧关系的僵持",
-          "link": "https://www.ftchinese.com/story/001111254",
-          "date": "Sun, 01 Nov 2026 16:00:00 GMT",
+          "title": "基石药业在ESMO大会上强化CS2009三特异性抗体三项临床验证",
+          "link": "https://www.ftchinese.com/story/001111268",
+          "date": "Mon, 02 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "《给阿嬷的情书》之外的真实下南洋",
-          "link": "https://www.ftchinese.com/story/001111246",
-          "date": "Sun, 01 Nov 2026 16:00:00 GMT",
+          "title": "美国前科学特使丹尼尔•卡曼：如何利用“鸭子曲线”？",
+          "link": "https://www.ftchinese.com/story/001111264",
+          "date": "Mon, 02 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "英阿主权争端助长南大西洋“无序捕捞”",
-          "link": "https://www.ftchinese.com/story/001111253",
-          "date": "Sun, 01 Nov 2026 16:00:00 GMT",
+          "title": "中期选举：特朗普帝王式总统派头面临现实检验",
+          "link": "https://www.ftchinese.com/story/001111267",
+          "date": "Mon, 02 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "FT社评：美国需要一届真正的国会",
-          "link": "https://www.ftchinese.com/story/001111252",
-          "date": "Sun, 01 Nov 2026 16:00:00 GMT",
+          "title": "内塔尼亚胡敦促特朗普重启对伊战争",
+          "link": "https://www.ftchinese.com/story/001111266",
+          "date": "Mon, 02 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "卢拉意外胜选导致农产品价格大跌",
-          "link": "https://www.ftchinese.com/story/001111251",
-          "date": "Sun, 01 Nov 2026 16:00:00 GMT",
+          "title": "普京是怎样分化西方的？",
+          "link": "https://www.ftchinese.com/story/001111265",
+          "date": "Mon, 02 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "如果勒庞当选？——法国对华经济政策环境变化前瞻",
-          "link": "https://www.ftchinese.com/story/001111250",
-          "date": "Sun, 01 Nov 2026 16:00:00 GMT",
+          "title": "美联储重回“学术央行”？",
+          "link": "https://www.ftchinese.com/story/001111247",
+          "date": "Mon, 02 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "彼得•汤姆森：海洋母亲教会我如何看待我们的未来",
-          "link": "https://www.ftchinese.com/story/001111237",
-          "date": "Sat, 31 Oct 2026 16:00:00 GMT",
+          "title": "真实利率归零的代价",
+          "link": "https://www.ftchinese.com/story/001111248",
+          "date": "Mon, 02 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "不愿进入“字节时间”的互联网巨头",
-          "link": "https://www.ftchinese.com/story/001111249",
-          "date": "Sat, 31 Oct 2026 16:00:00 GMT",
+          "title": "未完成的胜利：美国中期选举前瞻与特朗普的加密政策遗产",
+          "link": "https://www.ftchinese.com/story/001111258",
+          "date": "Mon, 02 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
       ]
