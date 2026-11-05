@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T06:56:12.422755+00:00",
+  "updated": "2026-11-05T07:19:22.068235+00:00",
   "partial": true,
   "feeds": [
     {
@@ -55,13 +55,20 @@
           "date": "Sat, 31 Oct 2026 05:01:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkkvq7.mp3"
         }
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "cnn10",
       "name": "CNN 10",
       "url": "https://feeds.megaphone.fm/WMHY2232473209",
       "items": [
+        {
+          "title": "These Drones Used to Track Sharks. Now They’re Searching for Koalas",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY6190838655.mp3",
+          "date": "Wed, 04 Nov 2026 13:53:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY6190838655.mp3"
+        },
         {
           "title": "After 1,711 Days Apart, Ukrainian Evacuees Reunite Thanks to Ceasefire Deal",
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2258265103.mp3",
@@ -103,12 +110,6 @@
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY5535306404.mp3",
           "date": "Mon, 26 Oct 2026 14:06:00 -0000",
           "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY5535306404.mp3"
-        },
-        {
-          "title": "How This Burger Joint Is Surviving Record High Beef Prices",
-          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7776465562.mp3",
-          "date": "Fri, 23 Oct 2026 15:57:00 -0000",
-          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7776465562.mp3"
         }
       ]
     },
@@ -117,6 +118,24 @@
       "name": "BBC Business Daily",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/bizdaily/rss.xml",
       "items": [
+        {
+          "title": "Power Players: Is Apple missing the AI boat?",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8gm7",
+          "date": "Wed, 04 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plc1md.mp3"
+        },
+        {
+          "title": "Founders: The entrepreneur betting AI will replace apps",
+          "link": "http://www.bbc.co.uk/programmes/w3ct98sv",
+          "date": "Tue, 03 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pl2w95.mp3"
+        },
+        {
+          "title": "Follow the money: Your Diwali gold necklace",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8grr",
+          "date": "Mon, 02 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkwx5v.mp3"
+        },
         {
           "title": "Can businesses trust AI?",
           "link": "http://www.bbc.co.uk/programmes/w3ct8ggq",
@@ -136,7 +155,7 @@
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkbmpz.mp3"
         },
         {
-          "title": "Power players: Can Meta reinvent itself for the AI age?",
+          "title": "Power Players: Can Meta reinvent itself for the AI age?",
           "link": "http://www.bbc.co.uk/programmes/w3ct8gm6",
           "date": "Wed, 28 Oct 2026 23:01:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pk63hj.mp3"
@@ -146,27 +165,8 @@
           "link": "http://www.bbc.co.uk/programmes/w3ct98st",
           "date": "Tue, 27 Oct 2026 21:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjx1f7.mp3"
-        },
-        {
-          "title": "Follow the money: The end of cheap money in Japan",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8grq",
-          "date": "Mon, 26 Oct 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjqwq8.mp3"
-        },
-        {
-          "title": "If China's exports are booming, why are consumers struggling?",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8ggp",
-          "date": "Sun, 25 Oct 2026 19:00:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjbgr8.mp3"
-        },
-        {
-          "title": "Taking stock: What French protests, Netflix data and the Alberta referendum reveal",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8g9z",
-          "date": "Thu, 22 Oct 2026 17:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pj34xb.mp3"
         }
-      ],
-      "stale": true
+      ]
     },
     {
       "id": "ft-bilingual",
@@ -174,51 +174,51 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
-          "title": "油价周二延续跌势",
-          "link": "https://www.ftchinese.com/story/001111278",
-          "date": "Tue, 03 Nov 2026 16:00:00 GMT",
+          "title": "“特朗普时代”是如何翻车的",
+          "link": "https://www.ftchinese.com/story/001111287",
+          "date": "Wed, 04 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "京东22亿欧元收购德国Ceconomy交易获批",
-          "link": "https://www.ftchinese.com/story/001111277",
-          "date": "Tue, 03 Nov 2026 16:00:00 GMT",
+          "title": "每周时事分析：特朗普后半个任期不好过",
+          "link": "https://www.ftchinese.com/story/001111286",
+          "date": "Wed, 04 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "华尔街密切关注美国州长选举",
-          "link": "https://www.ftchinese.com/story/001111276",
-          "date": "Tue, 03 Nov 2026 16:00:00 GMT",
+          "title": "中美俄领导人若在深圳会面，不会是“雅尔塔2.0”",
+          "link": "https://www.ftchinese.com/story/001111285",
+          "date": "Wed, 04 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "AI时代的黑暗历史回声",
-          "link": "https://www.ftchinese.com/story/001111275",
-          "date": "Tue, 03 Nov 2026 16:00:00 GMT",
+          "title": "再说“法国：骚乱与挑战”——兼谈移民、穆斯林与左派、特朗普及其他",
+          "link": "https://www.ftchinese.com/story/001111283",
+          "date": "Wed, 04 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "从“福利陷阱”看欧洲长期困局",
-          "link": "https://www.ftchinese.com/story/001111273",
-          "date": "Tue, 03 Nov 2026 16:00:00 GMT",
+          "title": "中国加大股市救市力度",
+          "link": "https://www.ftchinese.com/story/001111281",
+          "date": "Wed, 04 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "德国车企“由奢入俭难”",
-          "link": "https://www.ftchinese.com/story/001111270",
-          "date": "Tue, 03 Nov 2026 16:00:00 GMT",
+          "title": "索尔维达成稀土协议 减少对中国依赖",
+          "link": "https://www.ftchinese.com/story/001111282",
+          "date": "Wed, 04 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "中美AI融资的分野与合流：在冲突中寻求合作",
-          "link": "https://www.ftchinese.com/story/001111269",
-          "date": "Tue, 03 Nov 2026 16:00:00 GMT",
+          "title": "AI投资热潮带来的经济风险",
+          "link": "https://www.ftchinese.com/story/001111280",
+          "date": "Wed, 04 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "为何A股投资人总是被收割？",
-          "link": "https://www.ftchinese.com/story/001111260",
-          "date": "Tue, 03 Nov 2026 16:00:00 GMT",
+          "title": "产能过剩之谜：新能源车企为何“亏而不退”？",
+          "link": "https://www.ftchinese.com/story/001111257",
+          "date": "Wed, 04 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
       ]
