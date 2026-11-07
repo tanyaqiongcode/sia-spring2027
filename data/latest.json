@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T07:18:53.694696+00:00",
+  "updated": "2026-11-07T06:31:45.958047+00:00",
   "partial": true,
   "feeds": [
     {
@@ -55,13 +55,20 @@
           "date": "Mon, 02 Nov 2026 16:31:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkwrw5.mp3"
         }
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "cnn10",
       "name": "CNN 10",
       "url": "https://feeds.megaphone.fm/WMHY2232473209",
       "items": [
+        {
+          "title": "How Did Viking Graffiti Get Inside One of the World’s Most Famous Mosques?",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY1690811831.mp3",
+          "date": "Fri, 06 Nov 2026 15:45:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY1690811831.mp3"
+        },
         {
           "title": "The Historic Firsts of the 2026 Midterm Election",
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3155119095.mp3",
@@ -103,12 +110,6 @@
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7594466691.mp3",
           "date": "Wed, 28 Oct 2026 11:57:00 -0000",
           "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7594466691.mp3"
-        },
-        {
-          "title": "America Welcomes Its 64th National Park in Arizona",
-          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7956413658.mp3",
-          "date": "Tue, 27 Oct 2026 14:37:00 -0000",
-          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7956413658.mp3"
         }
       ]
     },
@@ -174,6 +175,36 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
+          "title": "搞笑诺贝尔奖告诉我们：作弊经济学值得研究",
+          "link": "https://www.ftchinese.com/story/001111304",
+          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "特朗普主义是否为美国政治的一次长期结构性变化？",
+          "link": "https://www.ftchinese.com/story/001111302",
+          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "当季候风吹过",
+          "link": "https://www.ftchinese.com/story/001111296",
+          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "加拿大阿尔伯塔公投尘烟未散尽",
+          "link": "https://www.ftchinese.com/story/001111303",
+          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "英国青年困境：生活有保障，为何难以独立？",
+          "link": "https://www.ftchinese.com/story/001111301",
+          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
           "title": "远期保障不应漠视当期生计：社保扩面的效率错配与规则风险",
           "link": "https://www.ftchinese.com/story/001111300",
           "date": "Thu, 05 Nov 2026 16:00:00 GMT",
@@ -188,36 +219,6 @@
         {
           "title": "美利坚复活了？中期选举的五点启示",
           "link": "https://www.ftchinese.com/story/001111297",
-          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "20个欧洲航班再遭“诈弹”威胁",
-          "link": "https://www.ftchinese.com/story/001111295",
-          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "《突如其来》：滨口龙介没能驱走“幽灵”",
-          "link": "https://www.ftchinese.com/story/001111292",
-          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "李翊云：任何过往的生命中，都有不该被遗忘的东西",
-          "link": "https://www.ftchinese.com/story/001111290",
-          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "“我是什么样的人，也会体现在我做的菜里”",
-          "link": "https://www.ftchinese.com/story/001111293",
-          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "不能对“后特朗普时代”有太多憧憬",
-          "link": "https://www.ftchinese.com/story/001111294",
           "date": "Thu, 05 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
