@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T06:31:45.958047+00:00",
+  "updated": "2026-11-08T06:38:22.910043+00:00",
   "partial": true,
   "feeds": [
     {
@@ -119,10 +119,22 @@
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/bizdaily/rss.xml",
       "items": [
         {
+          "title": "Power Players: Can the Democrats tackle America's affordability crisis?",
+          "link": "http://www.bbc.co.uk/programmes/p0plp56f",
+          "date": "Fri, 06 Nov 2026 16:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plp16h.mp3"
+        },
+        {
+          "title": "Taking Stock mid-terms special: The economy, Musk, Trump and data centres",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8gb6",
+          "date": "Thu, 05 Nov 2026 16:04:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plgzlw.mp3"
+        },
+        {
           "title": "Power Players: Is Apple missing the AI boat?",
           "link": "http://www.bbc.co.uk/programmes/w3ct8gm7",
           "date": "Wed, 04 Nov 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plc1md.mp3"
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plddpd.mp3"
         },
         {
           "title": "Founders: The entrepreneur betting AI will replace apps",
@@ -131,7 +143,7 @@
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pl2w95.mp3"
         },
         {
-          "title": "Follow the money: Your Diwali gold necklace",
+          "title": "Follow the Money: Your Diwali gold necklace",
           "link": "http://www.bbc.co.uk/programmes/w3ct8grr",
           "date": "Mon, 02 Nov 2026 21:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkwx5v.mp3"
@@ -153,21 +165,8 @@
           "link": "http://www.bbc.co.uk/programmes/w3ct8gb5",
           "date": "Thu, 29 Oct 2026 21:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkbmpz.mp3"
-        },
-        {
-          "title": "Power Players: Can Meta reinvent itself for the AI age?",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8gm6",
-          "date": "Wed, 28 Oct 2026 23:01:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pk63hj.mp3"
-        },
-        {
-          "title": "What do France's protests reveal about its economy?",
-          "link": "http://www.bbc.co.uk/programmes/w3ct98st",
-          "date": "Tue, 27 Oct 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pjx1f7.mp3"
         }
-      ],
-      "stale": true
+      ]
     },
     {
       "id": "ft-bilingual",
