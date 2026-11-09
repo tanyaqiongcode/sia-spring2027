@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T06:38:22.910043+00:00",
+  "updated": "2026-11-09T07:06:34.548424+00:00",
   "partial": true,
   "feeds": [
     {
@@ -166,7 +166,8 @@
           "date": "Thu, 29 Oct 2026 21:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkbmpz.mp3"
         }
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "ft-bilingual",
@@ -174,51 +175,51 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
-          "title": "搞笑诺贝尔奖告诉我们：作弊经济学值得研究",
-          "link": "https://www.ftchinese.com/story/001111304",
-          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
+          "title": "中国10月CPI小幅降低",
+          "link": "https://www.ftchinese.com/story/001111313",
+          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "特朗普主义是否为美国政治的一次长期结构性变化？",
-          "link": "https://www.ftchinese.com/story/001111302",
-          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
+          "title": "全球经济尚未失速，但增长可能成为少数国家的特权",
+          "link": "https://www.ftchinese.com/story/001111312",
+          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "当季候风吹过",
-          "link": "https://www.ftchinese.com/story/001111296",
-          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
+          "title": "Anthropic斥资34亿美元接手发电设备",
+          "link": "https://www.ftchinese.com/story/001111311",
+          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "加拿大阿尔伯塔公投尘烟未散尽",
-          "link": "https://www.ftchinese.com/story/001111303",
-          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
+          "title": "美国民主党控制国会对乌克兰意味着什么？",
+          "link": "https://www.ftchinese.com/story/001111309",
+          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "英国青年困境：生活有保障，为何难以独立？",
-          "link": "https://www.ftchinese.com/story/001111301",
-          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
+          "title": "FT社评：黑客攻击揭示联网世界缺陷",
+          "link": "https://www.ftchinese.com/story/001111310",
+          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "远期保障不应漠视当期生计：社保扩面的效率错配与规则风险",
-          "link": "https://www.ftchinese.com/story/001111300",
-          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
+          "title": "新能源遭遇气候变化“回旋镖”：生于减缓，困于适应",
+          "link": "https://www.ftchinese.com/story/001111299",
+          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "谁才算创作者：人工智能如何重塑创造力的边界？",
-          "link": "https://www.ftchinese.com/story/001111298",
-          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
+          "title": "“字节时间”之下：平台如何改变企业命运？",
+          "link": "https://www.ftchinese.com/story/001111305",
+          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "美利坚复活了？中期选举的五点启示",
-          "link": "https://www.ftchinese.com/story/001111297",
-          "date": "Thu, 05 Nov 2026 16:00:00 GMT",
+          "title": "AI取代房地产成为中国支柱产业？",
+          "link": "https://www.ftchinese.com/story/001111306",
+          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
       ]
