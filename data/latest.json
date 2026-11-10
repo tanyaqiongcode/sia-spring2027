@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-09T07:06:34.548424+00:00",
-  "partial": true,
+  "updated": "2026-11-10T07:42:10.493100+00:00",
+  "partial": false,
   "feeds": [
     {
       "id": "bbc-globalnews",
@@ -8,61 +8,66 @@
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
         {
-          "title": "Pete Hegseth under pressure after US elections",
-          "link": "http://www.bbc.co.uk/programmes/p0plk945",
-          "date": "Fri, 06 Nov 2026 05:39:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plk8hr.mp3"
+          "title": "Trump backs Hegseth as he faces impeachment push",
+          "link": "http://www.bbc.co.uk/programmes/p0pm6qtr",
+          "date": "Tue, 10 Nov 2026 05:19:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm6qfc.mp3"
         },
         {
-          "title": "Fresh mass protests in France",
-          "link": "http://www.bbc.co.uk/programmes/p0plh2tw",
-          "date": "Thu, 05 Nov 2026 16:22:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plh23f.mp3"
+          "title": "China denies spying on Nvidia boss",
+          "link": "http://www.bbc.co.uk/programmes/p0pm36r2",
+          "date": "Mon, 09 Nov 2026 15:29:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm35rk.mp3"
         },
         {
-          "title": "Trump blames Iran war for midterm defeat",
-          "link": "http://www.bbc.co.uk/programmes/p0plcn0g",
-          "date": "Thu, 05 Nov 2026 05:22:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plcmxt.mp3"
+          "title": "Nvidia investigates CEO's affair with suspected Chinese spy",
+          "link": "http://www.bbc.co.uk/programmes/p0plzjqt",
+          "date": "Mon, 09 Nov 2026 05:32:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plzjbf.mp3"
         },
         {
-          "title": "Democrats storm to success in US midterm elections",
-          "link": "http://www.bbc.co.uk/programmes/p0pl9nf9",
-          "date": "Wed, 04 Nov 2026 16:36:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pl9mdm.mp3"
+          "title": "The Global Story: They fled Russia. The US sent them back",
+          "link": "http://www.bbc.co.uk/programmes/p0pllbwj",
+          "date": "Sun, 08 Nov 2026 20:00:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pllbml.mp3"
         },
         {
-          "title": "Democrats projected to take control of US Congress",
-          "link": "http://www.bbc.co.uk/programmes/p0pl6m46",
-          "date": "Wed, 04 Nov 2026 05:51:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pl6lg9.mp3"
+          "title": "Poland in shock as six killed in shooting",
+          "link": "http://www.bbc.co.uk/programmes/p0plw73g",
+          "date": "Sun, 08 Nov 2026 04:44:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plw70f.mp3"
         },
         {
-          "title": "Americans vote in pivotal midterm elections",
-          "link": "http://www.bbc.co.uk/programmes/p0pl435f",
-          "date": "Tue, 03 Nov 2026 16:45:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pl42gf.mp3"
+          "title": "The Happy Pod: Celebrating the wedding that never happened",
+          "link": "http://www.bbc.co.uk/programmes/p0plplrh",
+          "date": "Sat, 07 Nov 2026 12:00:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plpklc.mp3"
         },
         {
-          "title": "Ukraine accuses Russia of hitting school used as aid centre",
-          "link": "http://www.bbc.co.uk/programmes/p0pkz9jt",
-          "date": "Tue, 03 Nov 2026 05:32:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkz8zd.mp3"
+          "title": "Trump appoints new chief of staff after midterm defeat",
+          "link": "http://www.bbc.co.uk/programmes/p0plrs2j",
+          "date": "Sat, 07 Nov 2026 04:19:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plrs0b.mp3"
         },
         {
-          "title": "Ukraine and Russia hit by fake emergency alerts",
-          "link": "http://www.bbc.co.uk/programmes/p0pkww1f",
-          "date": "Mon, 02 Nov 2026 16:31:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkwrw5.mp3"
+          "title": "Tech stocks tank over AI panic",
+          "link": "http://www.bbc.co.uk/programmes/p0plnyvn",
+          "date": "Fri, 06 Nov 2026 16:06:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plnwcw.mp3"
         }
-      ],
-      "stale": true
+      ]
     },
     {
       "id": "cnn10",
       "name": "CNN 10",
       "url": "https://feeds.megaphone.fm/WMHY2232473209",
       "items": [
+        {
+          "title": "Millions Celebrate Diwali: The Festival of Lights",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY1764563947.mp3",
+          "date": "Mon, 09 Nov 2026 12:49:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY1764563947.mp3"
+        },
         {
           "title": "How Did Viking Graffiti Get Inside One of the World’s Most Famous Mosques?",
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY1690811831.mp3",
@@ -104,12 +109,6 @@
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY6399124938.mp3",
           "date": "Thu, 29 Oct 2026 15:00:00 -0000",
           "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY6399124938.mp3"
-        },
-        {
-          "title": "How a Student-Led Movement Ousted Serbia’s Long-Term President",
-          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7594466691.mp3",
-          "date": "Wed, 28 Oct 2026 11:57:00 -0000",
-          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7594466691.mp3"
         }
       ]
     },
@@ -118,6 +117,18 @@
       "name": "BBC Business Daily",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/bizdaily/rss.xml",
       "items": [
+        {
+          "title": "Follow the Money: Are prediction markets the real winners of the US midterms?",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8grs",
+          "date": "Mon, 09 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm368f.mp3"
+        },
+        {
+          "title": "Why Europe wants to rely less on US tech companies",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8ggr",
+          "date": "Sun, 08 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plhryv.mp3"
+        },
         {
           "title": "Power Players: Can the Democrats tackle America's affordability crisis?",
           "link": "http://www.bbc.co.uk/programmes/p0plp56f",
@@ -153,21 +164,8 @@
           "link": "http://www.bbc.co.uk/programmes/w3ct8ggq",
           "date": "Sun, 01 Nov 2026 21:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkc14d.mp3"
-        },
-        {
-          "title": "Power Players special: Searching for answers on Google",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8gc8",
-          "date": "Fri, 30 Oct 2026 16:16:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkhq5d.mp3"
-        },
-        {
-          "title": "Taking Stock: Anthropic's mega-IPO, US mid-term battle and peak pumpkin spice",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8gb5",
-          "date": "Thu, 29 Oct 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkbmpz.mp3"
         }
-      ],
-      "stale": true
+      ]
     },
     {
       "id": "ft-bilingual",
@@ -175,51 +173,51 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
-          "title": "中国10月CPI小幅降低",
-          "link": "https://www.ftchinese.com/story/001111313",
-          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
+          "title": "Lex专栏：全球为何过度依赖黄仁勋",
+          "link": "https://www.ftchinese.com/story/001111325",
+          "date": "Mon, 09 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "全球经济尚未失速，但增长可能成为少数国家的特权",
-          "link": "https://www.ftchinese.com/story/001111312",
-          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
+          "title": "德国总理就落实援乌资金向欧盟发出通牒",
+          "link": "https://www.ftchinese.com/story/001111323",
+          "date": "Mon, 09 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "Anthropic斥资34亿美元接手发电设备",
-          "link": "https://www.ftchinese.com/story/001111311",
-          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
+          "title": "AI巨头的垂直整合模式还能撑多久？",
+          "link": "https://www.ftchinese.com/story/001111324",
+          "date": "Mon, 09 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "美国民主党控制国会对乌克兰意味着什么？",
-          "link": "https://www.ftchinese.com/story/001111309",
-          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
+          "title": "加拿大阿尔伯塔省省长在公投后面临党内反弹",
+          "link": "https://www.ftchinese.com/story/001111322",
+          "date": "Mon, 09 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "FT社评：黑客攻击揭示联网世界缺陷",
-          "link": "https://www.ftchinese.com/story/001111310",
-          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
+          "title": "AI正在经历痛苦的再定价",
+          "link": "https://www.ftchinese.com/story/001111315",
+          "date": "Mon, 09 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "新能源遭遇气候变化“回旋镖”：生于减缓，困于适应",
-          "link": "https://www.ftchinese.com/story/001111299",
-          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
+          "title": "当资本市场比银行更相信AI",
+          "link": "https://www.ftchinese.com/story/001111308",
+          "date": "Mon, 09 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "“字节时间”之下：平台如何改变企业命运？",
-          "link": "https://www.ftchinese.com/story/001111305",
-          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
+          "title": "为什么AI来了之后，“会说话”变成人的必修课？",
+          "link": "https://www.ftchinese.com/story/001111316",
+          "date": "Mon, 09 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "AI取代房地产成为中国支柱产业？",
-          "link": "https://www.ftchinese.com/story/001111306",
-          "date": "Sun, 08 Nov 2026 16:00:00 GMT",
+          "title": "德国年轻人走上街头：谁来为国家的未来买单？",
+          "link": "https://www.ftchinese.com/story/001111317",
+          "date": "Mon, 09 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
       ]
