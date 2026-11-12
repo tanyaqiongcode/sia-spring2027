@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T07:00:40.306870+00:00",
+  "updated": "2026-11-12T07:39:08.411256+00:00",
   "partial": true,
   "feeds": [
     {
@@ -7,6 +7,30 @@
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
+        {
+          "title": "Democrat Scott Colom wins Mississippi in historic victory",
+          "link": "http://www.bbc.co.uk/programmes/p0pmjmtq",
+          "date": "Thu, 12 Nov 2026 05:19:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmjmlw.mp3"
+        },
+        {
+          "title": "Russia-Ukraine talks: Prisoner release agreed",
+          "link": "http://www.bbc.co.uk/programmes/p0pmgsdd",
+          "date": "Wed, 11 Nov 2026 16:24:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmgrp4.mp3"
+        },
+        {
+          "title": "US soldier arrested in UK on suspicion of spying for Russia",
+          "link": "http://www.bbc.co.uk/programmes/p0pmcskb",
+          "date": "Wed, 11 Nov 2026 05:27:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmcsh6.mp3"
+        },
+        {
+          "title": "How US model agencies helped Epstein access victims",
+          "link": "http://www.bbc.co.uk/programmes/p0pm9szt",
+          "date": "Tue, 10 Nov 2026 15:47:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm9s2k.mp3"
+        },
         {
           "title": "Trump backs Hegseth as he faces impeachment push",
           "link": "http://www.bbc.co.uk/programmes/p0pm6qtr",
@@ -30,39 +54,20 @@
           "link": "http://www.bbc.co.uk/programmes/p0pllbwj",
           "date": "Sun, 08 Nov 2026 20:00:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pllbml.mp3"
-        },
-        {
-          "title": "Poland in shock as six killed in shooting",
-          "link": "http://www.bbc.co.uk/programmes/p0plw73g",
-          "date": "Sun, 08 Nov 2026 04:44:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plw70f.mp3"
-        },
-        {
-          "title": "The Happy Pod: Celebrating the wedding that never happened",
-          "link": "http://www.bbc.co.uk/programmes/p0plplrh",
-          "date": "Sat, 07 Nov 2026 12:00:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plpklc.mp3"
-        },
-        {
-          "title": "Trump appoints new chief of staff after midterm defeat",
-          "link": "http://www.bbc.co.uk/programmes/p0plrs2j",
-          "date": "Sat, 07 Nov 2026 04:19:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plrs0b.mp3"
-        },
-        {
-          "title": "Tech stocks tank over AI panic",
-          "link": "http://www.bbc.co.uk/programmes/p0plnyvn",
-          "date": "Fri, 06 Nov 2026 16:06:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plnwcw.mp3"
         }
-      ],
-      "stale": true
+      ]
     },
     {
       "id": "cnn10",
       "name": "CNN 10",
       "url": "https://feeds.megaphone.fm/WMHY2232473209",
       "items": [
+        {
+          "title": "Why a History-Making Ocean Liner Is Being Sunk on Purpose",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY6932755406.mp3",
+          "date": "Wed, 11 Nov 2026 14:51:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY6932755406.mp3"
+        },
         {
           "title": "Meat Is Scarce in North Korea. So Why the BBQ Boom?",
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY9655565042.mp3",
@@ -104,12 +109,6 @@
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY5058391250.mp3",
           "date": "Mon, 02 Nov 2026 19:22:00 -0000",
           "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY5058391250.mp3"
-        },
-        {
-          "title": "The Spooktacular History Behind Halloween, Explained",
-          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2832696316.mp3",
-          "date": "Fri, 30 Oct 2026 16:08:00 -0000",
-          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2832696316.mp3"
         }
       ]
     },
@@ -175,50 +174,50 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
-          "title": "贾雷德•戴蒙德——时势还是英雄，财阀、先知、主帅与君王",
-          "link": "https://www.ftchinese.com/story/001111336",
+          "title": "从黄仁勋事件，看硅谷公司治理风险",
+          "link": "https://www.ftchinese.com/story/001111344",
+          "date": "Wed, 11 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "投资者对AI专用发电技术企业信心下降",
+          "link": "https://www.ftchinese.com/story/001111347",
+          "date": "Wed, 11 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "沙特石油产量回升至接近战前水平",
+          "link": "https://www.ftchinese.com/story/001111346",
+          "date": "Wed, 11 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "美国科技股有望延续反弹趋势",
+          "link": "https://www.ftchinese.com/story/001111345",
+          "date": "Wed, 11 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "对话斯蒂芬•罗奇：中国经济与美国风险，前路何在？",
+          "link": "https://www.ftchinese.com/story/001111334",
+          "date": "Wed, 11 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "英伟达的治理危机",
+          "link": "https://www.ftchinese.com/story/001111337",
+          "date": "Wed, 11 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "选举激战中的台湾：民调分歧与政党分合",
+          "link": "https://www.ftchinese.com/story/001111340",
           "date": "Tue, 10 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "AI热潮添增长动力 ASMPT决定保留SMT业务",
-          "link": "https://www.ftchinese.com/story/001111335",
-          "date": "Tue, 10 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "少一些承诺，多一些解释：美联储的独立性考验",
-          "link": "https://www.ftchinese.com/story/001111331",
-          "date": "Tue, 10 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "高中学历遭质疑 印尼副总统有意辞职",
-          "link": "https://www.ftchinese.com/story/001111332",
-          "date": "Tue, 10 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "大国博弈下，孟加拉国的外交选择与孟中关系前景",
-          "link": "https://www.ftchinese.com/story/001111326",
-          "date": "Tue, 10 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "意大利银行业抨击梅洛尼政府最新增税计划",
-          "link": "https://www.ftchinese.com/story/001111330",
-          "date": "Tue, 10 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "美国10月环比通胀率放缓幅度不及预期",
-          "link": "https://www.ftchinese.com/story/001111329",
-          "date": "Tue, 10 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "Anthropic寻求以1.4万亿美元估值上市",
-          "link": "https://www.ftchinese.com/story/001111328",
+          "title": "红果短剧为何在中国这么火？",
+          "link": "https://www.ftchinese.com/story/001111343",
           "date": "Tue, 10 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
