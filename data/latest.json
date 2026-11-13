@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T07:39:08.411256+00:00",
+  "updated": "2026-11-13T07:11:31.059161+00:00",
   "partial": true,
   "feeds": [
     {
@@ -7,6 +7,18 @@
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
+        {
+          "title": "Putin lets Europe join Ukraine peace talks",
+          "link": "http://www.bbc.co.uk/programmes/p0pmr8st",
+          "date": "Fri, 13 Nov 2026 05:28:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmr8dk.mp3"
+        },
+        {
+          "title": "Nvidia CEO Jensen Huang resigns",
+          "link": "http://www.bbc.co.uk/programmes/p0pmn84n",
+          "date": "Thu, 12 Nov 2026 16:07:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmn5x9.mp3"
+        },
         {
           "title": "Democrat Scott Colom wins Mississippi in historic victory",
           "link": "http://www.bbc.co.uk/programmes/p0pmjmtq",
@@ -42,18 +54,6 @@
           "link": "http://www.bbc.co.uk/programmes/p0pm36r2",
           "date": "Mon, 09 Nov 2026 15:29:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm35rk.mp3"
-        },
-        {
-          "title": "Nvidia investigates CEO's affair with suspected Chinese spy",
-          "link": "http://www.bbc.co.uk/programmes/p0plzjqt",
-          "date": "Mon, 09 Nov 2026 05:32:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plzjbf.mp3"
-        },
-        {
-          "title": "The Global Story: They fled Russia. The US sent them back",
-          "link": "http://www.bbc.co.uk/programmes/p0pllbwj",
-          "date": "Sun, 08 Nov 2026 20:00:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pllbml.mp3"
         }
       ]
     },
@@ -62,6 +62,12 @@
       "name": "CNN 10",
       "url": "https://feeds.megaphone.fm/WMHY2232473209",
       "items": [
+        {
+          "title": "US Traffic Fatalities Reach Their Lowest Point in More Than a Decade",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY8258533932.mp3",
+          "date": "Thu, 12 Nov 2026 14:10:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY8258533932.mp3"
+        },
         {
           "title": "Why a History-Making Ocean Liner Is Being Sunk on Purpose",
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY6932755406.mp3",
@@ -103,12 +109,6 @@
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2258265103.mp3",
           "date": "Tue, 03 Nov 2026 12:55:00 -0000",
           "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2258265103.mp3"
-        },
-        {
-          "title": "FBI: North Korea Behind World’s Largest Cryptocurrency Heist",
-          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY5058391250.mp3",
-          "date": "Mon, 02 Nov 2026 19:22:00 -0000",
-          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY5058391250.mp3"
         }
       ]
     },
@@ -174,51 +174,51 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
-          "title": "从黄仁勋事件，看硅谷公司治理风险",
-          "link": "https://www.ftchinese.com/story/001111344",
-          "date": "Wed, 11 Nov 2026 16:00:00 GMT",
+          "title": "高雄市长选战：辩论杀出来的“人气女王”",
+          "link": "https://www.ftchinese.com/story/001111361",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "投资者对AI专用发电技术企业信心下降",
-          "link": "https://www.ftchinese.com/story/001111347",
-          "date": "Wed, 11 Nov 2026 16:00:00 GMT",
+          "title": "中国警告美国不要以黄仁勋之事为借口收紧技术出口限制",
+          "link": "https://www.ftchinese.com/story/001111358",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "沙特石油产量回升至接近战前水平",
-          "link": "https://www.ftchinese.com/story/001111346",
-          "date": "Wed, 11 Nov 2026 16:00:00 GMT",
+          "title": "“平价时尚”女王橘朵 加入中国美妆品牌出海行列",
+          "link": "https://www.ftchinese.com/story/001111360",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "美国科技股有望延续反弹趋势",
-          "link": "https://www.ftchinese.com/story/001111345",
-          "date": "Wed, 11 Nov 2026 16:00:00 GMT",
+          "title": "和谈之际乌克兰再遭星盾限速",
+          "link": "https://www.ftchinese.com/story/001111357",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "对话斯蒂芬•罗奇：中国经济与美国风险，前路何在？",
-          "link": "https://www.ftchinese.com/story/001111334",
-          "date": "Wed, 11 Nov 2026 16:00:00 GMT",
+          "title": "以军再度空袭加沙医院",
+          "link": "https://www.ftchinese.com/story/001111356",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "英伟达的治理危机",
-          "link": "https://www.ftchinese.com/story/001111337",
-          "date": "Wed, 11 Nov 2026 16:00:00 GMT",
+          "title": "从JD•万斯的《共融》看美国新右翼的思想图景",
+          "link": "https://www.ftchinese.com/story/001111349",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "选举激战中的台湾：民调分歧与政党分合",
-          "link": "https://www.ftchinese.com/story/001111340",
-          "date": "Tue, 10 Nov 2026 16:00:00 GMT",
+          "title": "对话2026布克奖得主M.约翰•哈里森：我想写崩塌世界中的人",
+          "link": "https://www.ftchinese.com/story/001111348",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "红果短剧为何在中国这么火？",
-          "link": "https://www.ftchinese.com/story/001111343",
-          "date": "Tue, 10 Nov 2026 16:00:00 GMT",
+          "title": "黄仁勋离开后 AI行业会否付出代价？",
+          "link": "https://www.ftchinese.com/story/001111355",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
       ]
