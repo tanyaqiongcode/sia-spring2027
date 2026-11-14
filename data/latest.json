@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T07:11:31.059161+00:00",
+  "updated": "2026-11-14T06:58:04.398047+00:00",
   "partial": true,
   "feeds": [
     {
@@ -55,13 +55,20 @@
           "date": "Mon, 09 Nov 2026 15:29:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm35rk.mp3"
         }
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "cnn10",
       "name": "CNN 10",
       "url": "https://feeds.megaphone.fm/WMHY2232473209",
       "items": [
+        {
+          "title": "A Desk Drawer Discovery Sheds New Light on 'I Have a Dream' Speech",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY4632923948.mp3",
+          "date": "Fri, 13 Nov 2026 15:37:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY4632923948.mp3"
+        },
         {
           "title": "US Traffic Fatalities Reach Their Lowest Point in More Than a Decade",
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY8258533932.mp3",
@@ -103,12 +110,6 @@
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY6190838655.mp3",
           "date": "Wed, 04 Nov 2026 13:53:00 -0000",
           "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY6190838655.mp3"
-        },
-        {
-          "title": "After 1,711 Days Apart, Ukrainian Evacuees Reunite Thanks to Ceasefire Deal",
-          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2258265103.mp3",
-          "date": "Tue, 03 Nov 2026 12:55:00 -0000",
-          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY2258265103.mp3"
         }
       ]
     },
@@ -117,6 +118,30 @@
       "name": "BBC Business Daily",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/bizdaily/rss.xml",
       "items": [
+        {
+          "title": "Power Players: What did Trump and the White House know about Nvidia?",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8gby",
+          "date": "Fri, 13 Nov 2026 16:00:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmx48g.mp3"
+        },
+        {
+          "title": "Taking Stock: The downfall of Nvidia's Jensen Huang",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8gb7",
+          "date": "Thu, 12 Nov 2026 21:00:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmq99n.mp3"
+        },
+        {
+          "title": "Power Players: Nvidia and the spy scandal",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8gm8",
+          "date": "Wed, 11 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmjb9c.mp3"
+        },
+        {
+          "title": "Founders: Moving to Kenya and building a fashion business",
+          "link": "http://www.bbc.co.uk/programmes/w3ct98sw",
+          "date": "Tue, 10 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm9jpz.mp3"
+        },
         {
           "title": "Follow the Money: Are prediction markets the real winners of the US midterms?",
           "link": "http://www.bbc.co.uk/programmes/w3ct8grs",
@@ -140,39 +165,50 @@
           "link": "http://www.bbc.co.uk/programmes/w3ct8gb6",
           "date": "Thu, 05 Nov 2026 16:04:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plgzlw.mp3"
-        },
-        {
-          "title": "Power Players: Is Apple missing the AI boat?",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8gm7",
-          "date": "Wed, 04 Nov 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plddpd.mp3"
-        },
-        {
-          "title": "Founders: The entrepreneur betting AI will replace apps",
-          "link": "http://www.bbc.co.uk/programmes/w3ct98sv",
-          "date": "Tue, 03 Nov 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pl2w95.mp3"
-        },
-        {
-          "title": "Follow the Money: Your Diwali gold necklace",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8grr",
-          "date": "Mon, 02 Nov 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkwx5v.mp3"
-        },
-        {
-          "title": "Can businesses trust AI?",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8ggq",
-          "date": "Sun, 01 Nov 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pkc14d.mp3"
         }
-      ],
-      "stale": true
+      ]
     },
     {
       "id": "ft-bilingual",
       "name": "FT中文网 · 双语阅读",
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
+        {
+          "title": "英伟达风波引发芯片出口限制担忧，中国AI企业股价大跌",
+          "link": "https://www.ftchinese.com/story/001111367",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "“黄仁勋危机”将扰乱人工智能行业",
+          "link": "https://www.ftchinese.com/story/001111366",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "美议员就芯片出口管控问题向卢特尼克施压",
+          "link": "https://www.ftchinese.com/story/001111365",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "今天的英国，为何要为奴隶贸易道歉？",
+          "link": "https://www.ftchinese.com/story/001111364",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "首位女性联邦总统即将诞生，德国社会怎么看？",
+          "link": "https://www.ftchinese.com/story/001111362",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "钧达海外扩产遇阻　叫停阿曼2.8亿美元项目",
+          "link": "https://www.ftchinese.com/story/001111363",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
         {
           "title": "高雄市长选战：辩论杀出来的“人气女王”",
           "link": "https://www.ftchinese.com/story/001111361",
@@ -182,42 +218,6 @@
         {
           "title": "中国警告美国不要以黄仁勋之事为借口收紧技术出口限制",
           "link": "https://www.ftchinese.com/story/001111358",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "“平价时尚”女王橘朵 加入中国美妆品牌出海行列",
-          "link": "https://www.ftchinese.com/story/001111360",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "和谈之际乌克兰再遭星盾限速",
-          "link": "https://www.ftchinese.com/story/001111357",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "以军再度空袭加沙医院",
-          "link": "https://www.ftchinese.com/story/001111356",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "从JD•万斯的《共融》看美国新右翼的思想图景",
-          "link": "https://www.ftchinese.com/story/001111349",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "对话2026布克奖得主M.约翰•哈里森：我想写崩塌世界中的人",
-          "link": "https://www.ftchinese.com/story/001111348",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "黄仁勋离开后 AI行业会否付出代价？",
-          "link": "https://www.ftchinese.com/story/001111355",
           "date": "Thu, 12 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
