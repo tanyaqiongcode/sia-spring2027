@@ -1,12 +1,36 @@
 {
-  "updated": "2026-11-14T06:58:04.398047+00:00",
-  "partial": true,
+  "updated": "2026-11-15T07:06:34.460241+00:00",
+  "partial": false,
   "feeds": [
     {
       "id": "bbc-globalnews",
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
+        {
+          "title": "SpaceX makes history catching part of returning spacecraft",
+          "link": "http://www.bbc.co.uk/programmes/p0pn35d7",
+          "date": "Sun, 15 Nov 2026 04:59:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pn353v.mp3"
+        },
+        {
+          "title": "The Happy Pod: I've put women on the map with Antarctic record",
+          "link": "http://www.bbc.co.uk/programmes/p0pmw5pp",
+          "date": "Sat, 14 Nov 2026 12:00:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmvz62.mp3"
+        },
+        {
+          "title": "US airspace reopens after flights grounded for several hours",
+          "link": "http://www.bbc.co.uk/programmes/p0pmzyrg",
+          "date": "Sat, 14 Nov 2026 04:41:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmzy3x.mp3"
+        },
+        {
+          "title": "Microsoft outage: Millions affected in over 70 countries",
+          "link": "http://www.bbc.co.uk/programmes/p0pmwsp6",
+          "date": "Fri, 13 Nov 2026 15:51:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmwqby.mp3"
+        },
         {
           "title": "Putin lets Europe join Ukraine peace talks",
           "link": "http://www.bbc.co.uk/programmes/p0pmr8st",
@@ -30,33 +54,8 @@
           "link": "http://www.bbc.co.uk/programmes/p0pmgsdd",
           "date": "Wed, 11 Nov 2026 16:24:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmgrp4.mp3"
-        },
-        {
-          "title": "US soldier arrested in UK on suspicion of spying for Russia",
-          "link": "http://www.bbc.co.uk/programmes/p0pmcskb",
-          "date": "Wed, 11 Nov 2026 05:27:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmcsh6.mp3"
-        },
-        {
-          "title": "How US model agencies helped Epstein access victims",
-          "link": "http://www.bbc.co.uk/programmes/p0pm9szt",
-          "date": "Tue, 10 Nov 2026 15:47:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm9s2k.mp3"
-        },
-        {
-          "title": "Trump backs Hegseth as he faces impeachment push",
-          "link": "http://www.bbc.co.uk/programmes/p0pm6qtr",
-          "date": "Tue, 10 Nov 2026 05:19:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm6qfc.mp3"
-        },
-        {
-          "title": "China denies spying on Nvidia boss",
-          "link": "http://www.bbc.co.uk/programmes/p0pm36r2",
-          "date": "Mon, 09 Nov 2026 15:29:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm35rk.mp3"
         }
-      ],
-      "stale": true
+      ]
     },
     {
       "id": "cnn10",
@@ -174,6 +173,12 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
+          "title": "黄仁勋离开后 AI行业会否付出代价？",
+          "link": "https://www.ftchinese.com/story/001111355",
+          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
           "title": "英伟达风波引发芯片出口限制担忧，中国AI企业股价大跌",
           "link": "https://www.ftchinese.com/story/001111367",
           "date": "Thu, 12 Nov 2026 16:00:00 GMT",
@@ -212,12 +217,6 @@
         {
           "title": "高雄市长选战：辩论杀出来的“人气女王”",
           "link": "https://www.ftchinese.com/story/001111361",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "中国警告美国不要以黄仁勋之事为借口收紧技术出口限制",
-          "link": "https://www.ftchinese.com/story/001111358",
           "date": "Thu, 12 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
