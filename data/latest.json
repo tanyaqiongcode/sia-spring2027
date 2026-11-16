@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-15T07:06:34.460241+00:00",
-  "partial": false,
+  "updated": "2026-11-16T07:12:41.030807+00:00",
+  "partial": true,
   "feeds": [
     {
       "id": "bbc-globalnews",
@@ -55,7 +55,8 @@
           "date": "Wed, 11 Nov 2026 16:24:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmgrp4.mp3"
         }
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "cnn10",
@@ -165,7 +166,8 @@
           "date": "Thu, 05 Nov 2026 16:04:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plgzlw.mp3"
         }
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "ft-bilingual",
@@ -173,51 +175,51 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
-          "title": "黄仁勋离开后 AI行业会否付出代价？",
-          "link": "https://www.ftchinese.com/story/001111355",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "title": "极地涡旋提前崩溃令人担忧寒冬",
+          "link": "https://www.ftchinese.com/story/001111375",
+          "date": "Sun, 15 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "英伟达风波引发芯片出口限制担忧，中国AI企业股价大跌",
-          "link": "https://www.ftchinese.com/story/001111367",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "title": "FT社评：Anthropic将受到公开股市约束",
+          "link": "https://www.ftchinese.com/story/001111374",
+          "date": "Sun, 15 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "“黄仁勋危机”将扰乱人工智能行业",
-          "link": "https://www.ftchinese.com/story/001111366",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "title": "纽约社会主义者组织支持奥卡西奥-科尔特斯竞选总统",
+          "link": "https://www.ftchinese.com/story/001111373",
+          "date": "Sun, 15 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "美议员就芯片出口管控问题向卢特尼克施压",
-          "link": "https://www.ftchinese.com/story/001111365",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "title": "俄罗斯要求欧洲挑选一名代表参与俄乌和谈",
+          "link": "https://www.ftchinese.com/story/001111372",
+          "date": "Sun, 15 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "今天的英国，为何要为奴隶贸易道歉？",
-          "link": "https://www.ftchinese.com/story/001111364",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "title": "一周世界舆论聚焦：黄仁勋的陨落与APEC峰会",
+          "link": "https://www.ftchinese.com/story/001111370",
+          "date": "Sat, 14 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "首位女性联邦总统即将诞生，德国社会怎么看？",
-          "link": "https://www.ftchinese.com/story/001111362",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "title": "美股大跌，AI盛宴落幕？",
+          "link": "https://www.ftchinese.com/story/001111368",
+          "date": "Sat, 14 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "钧达海外扩产遇阻　叫停阿曼2.8亿美元项目",
-          "link": "https://www.ftchinese.com/story/001111363",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "title": "中国光伏行业裁员潮的背后",
+          "link": "https://www.ftchinese.com/story/001111359",
+          "date": "Sat, 14 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "高雄市长选战：辩论杀出来的“人气女王”",
-          "link": "https://www.ftchinese.com/story/001111361",
-          "date": "Thu, 12 Nov 2026 16:00:00 GMT",
+          "title": "黄仁勋们，为什么越来越难只做商人？",
+          "link": "https://www.ftchinese.com/story/001111369",
+          "date": "Sat, 14 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
       ]
