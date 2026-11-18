@@ -1,12 +1,30 @@
 {
-  "updated": "2026-11-17T08:25:42.263697+00:00",
-  "partial": true,
+  "updated": "2026-11-18T07:53:29.118796+00:00",
+  "partial": false,
   "feeds": [
     {
       "id": "bbc-globalnews",
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
+        {
+          "title": "Nvidia rules out return for disgraced boss",
+          "link": "http://www.bbc.co.uk/programmes/p0pnjy0q",
+          "date": "Wed, 18 Nov 2026 05:26:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnjxxc.mp3"
+        },
+        {
+          "title": "Special episode: Trump, Putin and Xi meeting",
+          "link": "http://www.bbc.co.uk/programmes/p0pnhq1p",
+          "date": "Tue, 17 Nov 2026 20:00:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnhmvc.mp3"
+        },
+        {
+          "title": "Red carpet for Trump in Asia",
+          "link": "http://www.bbc.co.uk/programmes/p0pngj3s",
+          "date": "Tue, 17 Nov 2026 16:10:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pngg1l.mp3"
+        },
         {
           "title": "OpenAI sued by California over rogue cyber attacks",
           "link": "http://www.bbc.co.uk/programmes/p0pnc231",
@@ -36,24 +54,6 @@
           "link": "http://www.bbc.co.uk/programmes/p0pn35d7",
           "date": "Sun, 15 Nov 2026 04:59:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pn353v.mp3"
-        },
-        {
-          "title": "The Happy Pod: I've put women on the map with Antarctic record",
-          "link": "http://www.bbc.co.uk/programmes/p0pmw5pp",
-          "date": "Sat, 14 Nov 2026 12:00:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmvz62.mp3"
-        },
-        {
-          "title": "US airspace reopens after flights grounded for several hours",
-          "link": "http://www.bbc.co.uk/programmes/p0pmzyrg",
-          "date": "Sat, 14 Nov 2026 04:41:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmzy3x.mp3"
-        },
-        {
-          "title": "Microsoft outage: Millions affected in over 70 countries",
-          "link": "http://www.bbc.co.uk/programmes/p0pmwsp6",
-          "date": "Fri, 13 Nov 2026 15:51:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmwqby.mp3"
         }
       ]
     },
@@ -62,6 +62,12 @@
       "name": "CNN 10",
       "url": "https://feeds.megaphone.fm/WMHY2232473209",
       "items": [
+        {
+          "title": "Spacex’s Starship Makes History With Midair Catch Upon Return to Earth",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3321612276.mp3",
+          "date": "Tue, 17 Nov 2026 12:56:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3321612276.mp3"
+        },
         {
           "title": "A Rare Nationwide Ground Stop Brings All US Air Traffic to a Standstill",
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY4210096965.mp3",
@@ -103,12 +109,6 @@
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY1690811831.mp3",
           "date": "Fri, 06 Nov 2026 15:45:00 -0000",
           "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY1690811831.mp3"
-        },
-        {
-          "title": "The Historic Firsts of the 2026 Midterm Election",
-          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3155119095.mp3",
-          "date": "Thu, 05 Nov 2026 16:18:00 -0000",
-          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3155119095.mp3"
         }
       ]
     },
@@ -117,6 +117,24 @@
       "name": "BBC Business Daily",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/bizdaily/rss.xml",
       "items": [
+        {
+          "title": "Founders: Can a European AI firm take on Google Translate?",
+          "link": "http://www.bbc.co.uk/programmes/w3ct98sx",
+          "date": "Tue, 17 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnh0fm.mp3"
+        },
+        {
+          "title": "Follow the money: Who pays for the AI boom now?",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8grt",
+          "date": "Mon, 16 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pn9b1m.mp3"
+        },
+        {
+          "title": "Bringing baseball to Europe",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8ggs",
+          "date": "Sun, 15 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmxz5c.mp3"
+        },
         {
           "title": "Power Players: What did Trump and the White House know about Nvidia?",
           "link": "http://www.bbc.co.uk/programmes/w3ct8gby",
@@ -146,33 +164,38 @@
           "link": "http://www.bbc.co.uk/programmes/w3ct8grs",
           "date": "Mon, 09 Nov 2026 21:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm368f.mp3"
-        },
-        {
-          "title": "Why Europe wants to rely less on US tech companies",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8ggr",
-          "date": "Sun, 08 Nov 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plhryv.mp3"
-        },
-        {
-          "title": "Power Players: Can the Democrats tackle America's affordability crisis?",
-          "link": "http://www.bbc.co.uk/programmes/p0plp56f",
-          "date": "Fri, 06 Nov 2026 16:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plp16h.mp3"
-        },
-        {
-          "title": "Taking Stock mid-terms special: The economy, Musk, Trump and data centres",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8gb6",
-          "date": "Thu, 05 Nov 2026 16:04:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0plgzlw.mp3"
         }
-      ],
-      "stale": true
+      ]
     },
     {
       "id": "ft-bilingual",
       "name": "FT中文网 · 双语阅读",
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
+        {
+          "title": "偏见的新衣——评黄亚生的经济观点",
+          "link": "https://www.ftchinese.com/story/001112096",
+          "date": "Tue, 17 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "FT社评：美国对华AI芯片战的微妙平衡",
+          "link": "https://www.ftchinese.com/story/001111395",
+          "date": "Mon, 16 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "收入升利润跌 明基医院经营压力大",
+          "link": "https://www.ftchinese.com/story/001111393",
+          "date": "Mon, 16 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "英伟达董事会不考虑恢复黄仁勋的CEO职位",
+          "link": "https://www.ftchinese.com/story/001111390",
+          "date": "Mon, 16 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
         {
           "title": "克里姆林宫希望中美俄会晤后发表“联合声明”",
           "link": "https://www.ftchinese.com/story/001111389",
@@ -194,30 +217,6 @@
         {
           "title": "欧盟再度推动AI治理全球协议",
           "link": "https://www.ftchinese.com/story/001111386",
-          "date": "Mon, 16 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "全世界“做多”美国的隐忧",
-          "link": "https://www.ftchinese.com/story/001111385",
-          "date": "Mon, 16 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "AI投资、规模“正确”与美股 （上）",
-          "link": "https://www.ftchinese.com/story/001111376",
-          "date": "Mon, 16 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "COP31专访：安娜•托尼谈摆脱化石燃料路线图",
-          "link": "https://www.ftchinese.com/story/001111371",
-          "date": "Mon, 16 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "黄仁勋辞职或触发AI投资估值调整",
-          "link": "https://www.ftchinese.com/story/001111379",
           "date": "Mon, 16 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
