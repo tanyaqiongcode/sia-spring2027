@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T07:53:29.118796+00:00",
+  "updated": "2026-11-19T07:51:25.118645+00:00",
   "partial": false,
   "feeds": [
     {
@@ -7,6 +7,18 @@
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
+        {
+          "title": "BBC reports from Ukraine's undergound frontier",
+          "link": "http://www.bbc.co.uk/programmes/p0pnrndj",
+          "date": "Thu, 19 Nov 2026 05:19:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnrnb6.mp3"
+        },
+        {
+          "title": "Trump, Xi and Putin meet in China",
+          "link": "http://www.bbc.co.uk/programmes/p0pnndk4",
+          "date": "Wed, 18 Nov 2026 15:43:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnncvn.mp3"
+        },
         {
           "title": "Nvidia rules out return for disgraced boss",
           "link": "http://www.bbc.co.uk/programmes/p0pnjy0q",
@@ -42,18 +54,6 @@
           "link": "http://www.bbc.co.uk/programmes/p0pn65z8",
           "date": "Mon, 16 Nov 2026 05:48:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pn65f7.mp3"
-        },
-        {
-          "title": "The Global Story: How North Korea pulled off a $6bn heist",
-          "link": "http://www.bbc.co.uk/programmes/p0pmv9b1",
-          "date": "Sun, 15 Nov 2026 20:00:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmv7s7.mp3"
-        },
-        {
-          "title": "SpaceX makes history catching part of returning spacecraft",
-          "link": "http://www.bbc.co.uk/programmes/p0pn35d7",
-          "date": "Sun, 15 Nov 2026 04:59:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pn353v.mp3"
         }
       ]
     },
@@ -62,6 +62,12 @@
       "name": "CNN 10",
       "url": "https://feeds.megaphone.fm/WMHY2232473209",
       "items": [
+        {
+          "title": "A New Octopus Study Spotlights Nature’s Most Extreme Escape Artists",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7345720081.mp3",
+          "date": "Wed, 18 Nov 2026 11:59:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7345720081.mp3"
+        },
         {
           "title": "Spacex’s Starship Makes History With Midair Catch Upon Return to Earth",
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3321612276.mp3",
@@ -103,12 +109,6 @@
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY1764563947.mp3",
           "date": "Mon, 09 Nov 2026 12:49:00 -0000",
           "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY1764563947.mp3"
-        },
-        {
-          "title": "How Did Viking Graffiti Get Inside One of the World’s Most Famous Mosques?",
-          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY1690811831.mp3",
-          "date": "Fri, 06 Nov 2026 15:45:00 -0000",
-          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY1690811831.mp3"
         }
       ]
     },
@@ -118,13 +118,19 @@
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/bizdaily/rss.xml",
       "items": [
         {
+          "title": "Power Players: How do you value Anthropic?",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8gm9",
+          "date": "Wed, 18 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnr9gw.mp3"
+        },
+        {
           "title": "Founders: Can a European AI firm take on Google Translate?",
           "link": "http://www.bbc.co.uk/programmes/w3ct98sx",
           "date": "Tue, 17 Nov 2026 21:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnh0fm.mp3"
         },
         {
-          "title": "Follow the money: Who pays for the AI boom now?",
+          "title": "Follow the Money: Who pays for the AI boom now?",
           "link": "http://www.bbc.co.uk/programmes/w3ct8grt",
           "date": "Mon, 16 Nov 2026 21:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pn9b1m.mp3"
@@ -158,12 +164,6 @@
           "link": "http://www.bbc.co.uk/programmes/w3ct98sw",
           "date": "Tue, 10 Nov 2026 21:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm9jpz.mp3"
-        },
-        {
-          "title": "Follow the Money: Are prediction markets the real winners of the US midterms?",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8grs",
-          "date": "Mon, 09 Nov 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm368f.mp3"
         }
       ]
     },
@@ -172,6 +172,12 @@
       "name": "FT中文网 · 双语阅读",
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
+        {
+          "title": "APEC：全球治理机制的新标杆",
+          "link": "https://www.ftchinese.com/story/001112098",
+          "date": "Wed, 18 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
         {
           "title": "偏见的新衣——评黄亚生的经济观点",
           "link": "https://www.ftchinese.com/story/001112096",
@@ -211,12 +217,6 @@
         {
           "title": "黄仁勋与AI的雅尔塔时刻",
           "link": "https://www.ftchinese.com/story/001111387",
-          "date": "Mon, 16 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "欧盟再度推动AI治理全球协议",
-          "link": "https://www.ftchinese.com/story/001111386",
           "date": "Mon, 16 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
