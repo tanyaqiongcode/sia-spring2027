@@ -1,12 +1,24 @@
 {
-  "updated": "2026-11-19T07:51:25.118645+00:00",
-  "partial": false,
+  "updated": "2026-11-20T07:41:51.161130+00:00",
+  "partial": true,
   "feeds": [
     {
       "id": "bbc-globalnews",
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
+        {
+          "title": "Abusers convicted in Joanne Young case echoing Pelicot",
+          "link": "http://www.bbc.co.uk/programmes/p0pnyk0h",
+          "date": "Fri, 20 Nov 2026 05:33:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnyjht.mp3"
+        },
+        {
+          "title": "UN court says Myanmar committed genocide against Rohingyas",
+          "link": "http://www.bbc.co.uk/programmes/p0pnw5rb",
+          "date": "Thu, 19 Nov 2026 16:03:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnw2mf.mp3"
+        },
         {
           "title": "BBC reports from Ukraine's undergound frontier",
           "link": "http://www.bbc.co.uk/programmes/p0pnrndj",
@@ -42,18 +54,6 @@
           "link": "http://www.bbc.co.uk/programmes/p0pnc231",
           "date": "Tue, 17 Nov 2026 05:35:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnc1vp.mp3"
-        },
-        {
-          "title": "Crimea Kerch Bridge hit in a huge Ukrainian drone attack",
-          "link": "http://www.bbc.co.uk/programmes/p0pn98q4",
-          "date": "Mon, 16 Nov 2026 16:25:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pn97sf.mp3"
-        },
-        {
-          "title": "Government forces retreat in Yemen",
-          "link": "http://www.bbc.co.uk/programmes/p0pn65z8",
-          "date": "Mon, 16 Nov 2026 05:48:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pn65f7.mp3"
         }
       ]
     },
@@ -62,6 +62,12 @@
       "name": "CNN 10",
       "url": "https://feeds.megaphone.fm/WMHY2232473209",
       "items": [
+        {
+          "title": "How a California Freeway Ban Could Impact a Self-Driving Car Company",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3862194444.mp3",
+          "date": "Thu, 19 Nov 2026 14:25:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3862194444.mp3"
+        },
         {
           "title": "A New Octopus Study Spotlights Nature’s Most Extreme Escape Artists",
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY7345720081.mp3",
@@ -103,12 +109,6 @@
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY9655565042.mp3",
           "date": "Tue, 10 Nov 2026 15:12:00 -0000",
           "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY9655565042.mp3"
-        },
-        {
-          "title": "Millions Celebrate Diwali: The Festival of Lights",
-          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY1764563947.mp3",
-          "date": "Mon, 09 Nov 2026 12:49:00 -0000",
-          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY1764563947.mp3"
         }
       ]
     },
@@ -165,13 +165,26 @@
           "date": "Tue, 10 Nov 2026 21:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm9jpz.mp3"
         }
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "ft-bilingual",
       "name": "FT中文网 · 双语阅读",
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
+        {
+          "title": "APEC峰会：中美从更加均衡走向战略稳定",
+          "link": "https://www.ftchinese.com/story/001112100",
+          "date": "Thu, 19 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "《可能的爱》：鸿沟两端的幻象",
+          "link": "https://www.ftchinese.com/story/001112099",
+          "date": "Thu, 19 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
         {
           "title": "APEC：全球治理机制的新标杆",
           "link": "https://www.ftchinese.com/story/001112098",
@@ -205,18 +218,6 @@
         {
           "title": "克里姆林宫希望中美俄会晤后发表“联合声明”",
           "link": "https://www.ftchinese.com/story/001111389",
-          "date": "Mon, 16 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "科技投资者：“成功和名望”损害硅谷企业领导水平",
-          "link": "https://www.ftchinese.com/story/001111388",
-          "date": "Mon, 16 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "黄仁勋与AI的雅尔塔时刻",
-          "link": "https://www.ftchinese.com/story/001111387",
           "date": "Mon, 16 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
