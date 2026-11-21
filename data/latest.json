@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T07:41:51.161130+00:00",
+  "updated": "2026-11-21T07:39:31.686804+00:00",
   "partial": true,
   "feeds": [
     {
@@ -55,13 +55,20 @@
           "date": "Tue, 17 Nov 2026 05:35:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnc1vp.mp3"
         }
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "cnn10",
       "name": "CNN 10",
       "url": "https://feeds.megaphone.fm/WMHY2232473209",
       "items": [
+        {
+          "title": "26 Years Later: The US Loses Its Measles-Free Status",
+          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY4396426804.mp3",
+          "date": "Fri, 20 Nov 2026 12:38:00 -0000",
+          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY4396426804.mp3"
+        },
         {
           "title": "How a California Freeway Ban Could Impact a Self-Driving Car Company",
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY3862194444.mp3",
@@ -103,12 +110,6 @@
           "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY6932755406.mp3",
           "date": "Wed, 11 Nov 2026 14:51:00 -0000",
           "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY6932755406.mp3"
-        },
-        {
-          "title": "Meat Is Scarce in North Korea. So Why the BBQ Boom?",
-          "link": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY9655565042.mp3",
-          "date": "Tue, 10 Nov 2026 15:12:00 -0000",
-          "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/swap.fm/track/2nzGkisFXQswLYT5s325/traffic.megaphone.fm/WMHY9655565042.mp3"
         }
       ]
     },
