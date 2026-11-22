@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T07:39:31.686804+00:00",
+  "updated": "2026-11-22T07:23:28.592386+00:00",
   "partial": true,
   "feeds": [
     {
@@ -7,6 +7,30 @@
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
+        {
+          "title": "Deadlock at UN climate summit in Turkey",
+          "link": "http://www.bbc.co.uk/programmes/p0pp9hxv",
+          "date": "Sun, 22 Nov 2026 04:48:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pp9hr7.mp3"
+        },
+        {
+          "title": "The Happy Pod: The 'amazing’ device that controls Tourette's",
+          "link": "http://www.bbc.co.uk/programmes/p0pp4d5y",
+          "date": "Sat, 21 Nov 2026 12:00:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pp4c96.mp3"
+        },
+        {
+          "title": "Man found guilty of starting deadly LA wildfire",
+          "link": "http://www.bbc.co.uk/programmes/p0pp66wy",
+          "date": "Sat, 21 Nov 2026 05:00:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pp66mc.mp3"
+        },
+        {
+          "title": "UK agrees deal on closer cooperation with EU",
+          "link": "http://www.bbc.co.uk/programmes/p0pp3pln",
+          "date": "Fri, 20 Nov 2026 15:29:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pp3ndk.mp3"
+        },
         {
           "title": "Abusers convicted in Joanne Young case echoing Pelicot",
           "link": "http://www.bbc.co.uk/programmes/p0pnyk0h",
@@ -30,33 +54,8 @@
           "link": "http://www.bbc.co.uk/programmes/p0pnndk4",
           "date": "Wed, 18 Nov 2026 15:43:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnncvn.mp3"
-        },
-        {
-          "title": "Nvidia rules out return for disgraced boss",
-          "link": "http://www.bbc.co.uk/programmes/p0pnjy0q",
-          "date": "Wed, 18 Nov 2026 05:26:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnjxxc.mp3"
-        },
-        {
-          "title": "Special episode: Trump, Putin and Xi meeting",
-          "link": "http://www.bbc.co.uk/programmes/p0pnhq1p",
-          "date": "Tue, 17 Nov 2026 20:00:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnhmvc.mp3"
-        },
-        {
-          "title": "Red carpet for Trump in Asia",
-          "link": "http://www.bbc.co.uk/programmes/p0pngj3s",
-          "date": "Tue, 17 Nov 2026 16:10:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pngg1l.mp3"
-        },
-        {
-          "title": "OpenAI sued by California over rogue cyber attacks",
-          "link": "http://www.bbc.co.uk/programmes/p0pnc231",
-          "date": "Tue, 17 Nov 2026 05:35:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnc1vp.mp3"
         }
-      ],
-      "stale": true
+      ]
     },
     {
       "id": "cnn10",
