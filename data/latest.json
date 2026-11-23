@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T07:23:28.592386+00:00",
+  "updated": "2026-11-23T08:07:30.205490+00:00",
   "partial": true,
   "feeds": [
     {
@@ -55,7 +55,8 @@
           "date": "Wed, 18 Nov 2026 15:43:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnncvn.mp3"
         }
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "cnn10",
