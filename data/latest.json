@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T10:21:28.127550+00:00",
+  "updated": "2026-11-25T09:03:15.113536+00:00",
   "partial": true,
   "feeds": [
     {
@@ -7,6 +7,18 @@
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
+        {
+          "title": "Huawei has been found guilty of bank fraud in the US",
+          "link": "http://www.bbc.co.uk/programmes/p0pprc4x",
+          "date": "Wed, 25 Nov 2026 06:05:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ppr6k6.mp3"
+        },
+        {
+          "title": "Is Jensen Huang's reinstatement good news for China?",
+          "link": "http://www.bbc.co.uk/programmes/p0ppp111",
+          "date": "Tue, 24 Nov 2026 16:47:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ppnzlx.mp3"
+        },
         {
           "title": "Stock markets jump after Nvidia boss reinstated",
           "link": "http://www.bbc.co.uk/programmes/p0ppkqn5",
@@ -42,18 +54,6 @@
           "link": "http://www.bbc.co.uk/programmes/p0pp4d5y",
           "date": "Sat, 21 Nov 2026 12:00:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pp4c96.mp3"
-        },
-        {
-          "title": "Man found guilty of starting deadly LA wildfire",
-          "link": "http://www.bbc.co.uk/programmes/p0pp66wy",
-          "date": "Sat, 21 Nov 2026 05:00:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pp66mc.mp3"
-        },
-        {
-          "title": "UK agrees deal on closer cooperation with EU",
-          "link": "http://www.bbc.co.uk/programmes/p0pp3pln",
-          "date": "Fri, 20 Nov 2026 15:29:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pp3ndk.mp3"
         }
       ]
     },
@@ -174,51 +174,51 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
+          "title": "和誉医药首款自研药在美获批，首笔销售将触发2,000万美元付款",
+          "link": "https://www.ftchinese.com/story/2623230e-d4a2-4512-99c0-b6758320b253",
+          "date": "Tue, 24 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "转转传赴港筹5亿美元，身价还看盈利成色",
+          "link": "https://www.ftchinese.com/story/200371cd-a575-440a-85c1-b1a4e6a9e69e",
+          "date": "Tue, 24 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "游戏业务初见成效 雅乐科技营收增长提速",
+          "link": "https://www.ftchinese.com/story/253100b9-4fa2-43d3-974a-ff734825b9c5",
+          "date": "Tue, 24 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "对充满戏剧性的黄仁勋事件的严肃公司治理思考",
+          "link": "https://www.ftchinese.com/story/a4bcce1a-3f81-4833-a46a-843bc7272241",
+          "date": "Tue, 24 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "欧洲贸易壁垒再起，中国汽车如何突围？",
+          "link": "https://www.ftchinese.com/story/fa3fc842-94da-487a-8bcd-fd2fe73f2862",
+          "date": "Mon, 23 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "如何借鉴？从Anthropic招股书看融资创新、生态杠杆与风险边界",
+          "link": "https://www.ftchinese.com/story/f3437c2e-1327-430a-ba46-1784896df326",
+          "date": "Mon, 23 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "地缘政治风险与全球投资：不确定性阴影下的全球投资重构",
+          "link": "https://www.ftchinese.com/story/8b259928-bfcc-4298-bd45-bc2c1317017d",
+          "date": "Mon, 23 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
           "title": "从雷曼兄弟到黄仁勋，谁在决定美国公司的命运？",
           "link": "https://www.ftchinese.com/story/001112105",
           "date": "Mon, 23 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "海湾国家的“算力美元”生意走到十字路口",
-          "link": "https://www.ftchinese.com/story/001112104",
-          "date": "Mon, 23 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "APEC峰会：中美从更加均衡走向战略稳定",
-          "link": "https://www.ftchinese.com/story/001112100",
-          "date": "Thu, 19 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "《可能的爱》：鸿沟两端的幻象",
-          "link": "https://www.ftchinese.com/story/001112099",
-          "date": "Thu, 19 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "APEC：全球治理机制的新标杆",
-          "link": "https://www.ftchinese.com/story/001112098",
-          "date": "Wed, 18 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "偏见的新衣——评黄亚生的经济观点",
-          "link": "https://www.ftchinese.com/story/001112096",
-          "date": "Tue, 17 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "FT社评：美国对华AI芯片战的微妙平衡",
-          "link": "https://www.ftchinese.com/story/001111395",
-          "date": "Mon, 16 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "收入升利润跌 明基医院经营压力大",
-          "link": "https://www.ftchinese.com/story/001111393",
-          "date": "Mon, 16 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
       ]
