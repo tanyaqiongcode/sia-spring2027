@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T09:03:15.113536+00:00",
+  "updated": "2026-11-26T08:51:08.061992+00:00",
   "partial": true,
   "feeds": [
     {
@@ -55,7 +55,8 @@
           "date": "Sat, 21 Nov 2026 12:00:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pp4c96.mp3"
         }
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "cnn10",
@@ -174,6 +175,42 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
+          "title": "顶住双重压力 达势股份借新店扩张实现增长",
+          "link": "https://www.ftchinese.com/story/19e4e3bb-1d9c-4e01-9090-19f05a1a8a1d",
+          "date": "Wed, 25 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "AI泡沫破裂之际　亿都交出亮眼转型成绩",
+          "link": "https://www.ftchinese.com/story/03d86fff-81d4-416a-8b5f-b81fe0c15aec",
+          "date": "Wed, 25 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "英国移民新规与工地的中文涂鸦",
+          "link": "https://www.ftchinese.com/story/588fc634-8e29-491d-b60d-3ecd5c05052a",
+          "date": "Wed, 25 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "中国养老金的幸福与痛苦",
+          "link": "https://www.ftchinese.com/story/a064a530-0a80-49ce-b28f-0bd6118e4f63",
+          "date": "Wed, 25 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "放学后的账谁来付？",
+          "link": "https://www.ftchinese.com/story/4ef1fca0-ec8a-4a1b-8a21-4d97763a34be",
+          "date": "Wed, 25 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
+          "title": "专访清华大学蒙克：AI时代，“做自己喜欢的事”为什么不再是一句“鸡汤”？",
+          "link": "https://www.ftchinese.com/story/df786819-2c28-4e17-84da-76f9333d72b7",
+          "date": "Wed, 25 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
+        {
           "title": "和誉医药首款自研药在美获批，首笔销售将触发2,000万美元付款",
           "link": "https://www.ftchinese.com/story/2623230e-d4a2-4512-99c0-b6758320b253",
           "date": "Tue, 24 Nov 2026 16:00:00 GMT",
@@ -183,42 +220,6 @@
           "title": "转转传赴港筹5亿美元，身价还看盈利成色",
           "link": "https://www.ftchinese.com/story/200371cd-a575-440a-85c1-b1a4e6a9e69e",
           "date": "Tue, 24 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "游戏业务初见成效 雅乐科技营收增长提速",
-          "link": "https://www.ftchinese.com/story/253100b9-4fa2-43d3-974a-ff734825b9c5",
-          "date": "Tue, 24 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "对充满戏剧性的黄仁勋事件的严肃公司治理思考",
-          "link": "https://www.ftchinese.com/story/a4bcce1a-3f81-4833-a46a-843bc7272241",
-          "date": "Tue, 24 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "欧洲贸易壁垒再起，中国汽车如何突围？",
-          "link": "https://www.ftchinese.com/story/fa3fc842-94da-487a-8bcd-fd2fe73f2862",
-          "date": "Mon, 23 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "如何借鉴？从Anthropic招股书看融资创新、生态杠杆与风险边界",
-          "link": "https://www.ftchinese.com/story/f3437c2e-1327-430a-ba46-1784896df326",
-          "date": "Mon, 23 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "地缘政治风险与全球投资：不确定性阴影下的全球投资重构",
-          "link": "https://www.ftchinese.com/story/8b259928-bfcc-4298-bd45-bc2c1317017d",
-          "date": "Mon, 23 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "从雷曼兄弟到黄仁勋，谁在决定美国公司的命运？",
-          "link": "https://www.ftchinese.com/story/001112105",
-          "date": "Mon, 23 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
       ]
