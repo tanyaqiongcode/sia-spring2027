@@ -1,12 +1,36 @@
 {
-  "updated": "2026-11-26T08:51:08.061992+00:00",
-  "partial": true,
+  "updated": "2026-11-27T08:59:45.361600+00:00",
+  "partial": false,
   "feeds": [
     {
       "id": "bbc-globalnews",
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
+        {
+          "title": "President Zelensky voices his frustration with the US",
+          "link": "http://www.bbc.co.uk/programmes/p0pq5lhm",
+          "date": "Fri, 27 Nov 2026 05:20:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pq5lc7.mp3"
+        },
+        {
+          "title": "Net migration to UK at lowest level since 1997",
+          "link": "http://www.bbc.co.uk/programmes/p0pq2ymt",
+          "date": "Thu, 26 Nov 2026 16:09:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pq2tz0.mp3"
+        },
+        {
+          "title": "Trump approves Elon Musk's plan for data centres in space",
+          "link": "http://www.bbc.co.uk/programmes/p0ppz1kd",
+          "date": "Thu, 26 Nov 2026 05:34:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ppz1cj.mp3"
+        },
+        {
+          "title": "US announces new tariffs on China and other countries",
+          "link": "http://www.bbc.co.uk/programmes/p0ppwqrn",
+          "date": "Wed, 25 Nov 2026 16:47:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ppwplz.mp3"
+        },
         {
           "title": "Huawei has been found guilty of bank fraud in the US",
           "link": "http://www.bbc.co.uk/programmes/p0pprc4x",
@@ -30,33 +54,8 @@
           "link": "http://www.bbc.co.uk/programmes/p0pphgd5",
           "date": "Mon, 23 Nov 2026 16:08:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pphdx7.mp3"
-        },
-        {
-          "title": "COP31 in Turkey ends without a deal",
-          "link": "http://www.bbc.co.uk/programmes/p0ppdfkn",
-          "date": "Mon, 23 Nov 2026 05:48:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ppdf4f.mp3"
-        },
-        {
-          "title": "The Global Story: AI can imitate a human. But can it think like one?",
-          "link": "http://www.bbc.co.uk/programmes/p0pp0406",
-          "date": "Sun, 22 Nov 2026 20:00:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pp03f4.mp3"
-        },
-        {
-          "title": "Deadlock at UN climate summit in Turkey",
-          "link": "http://www.bbc.co.uk/programmes/p0pp9hxv",
-          "date": "Sun, 22 Nov 2026 04:48:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pp9hr7.mp3"
-        },
-        {
-          "title": "The Happy Pod: The 'amazing’ device that controls Tourette's",
-          "link": "http://www.bbc.co.uk/programmes/p0pp4d5y",
-          "date": "Sat, 21 Nov 2026 12:00:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pp4c96.mp3"
         }
-      ],
-      "stale": true
+      ]
     },
     {
       "id": "cnn10",
@@ -119,55 +118,54 @@
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/bizdaily/rss.xml",
       "items": [
         {
-          "title": "Power Players: How do you value Anthropic?",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8gm9",
-          "date": "Wed, 18 Nov 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnr9gw.mp3"
+          "title": "Taking Stock: Trump brings back tariffs and tech bosses",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8gb9",
+          "date": "Thu, 26 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pq38zb.mp3"
         },
         {
-          "title": "Founders: Can a European AI firm take on Google Translate?",
-          "link": "http://www.bbc.co.uk/programmes/w3ct98sx",
-          "date": "Tue, 17 Nov 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnh0fm.mp3"
+          "title": "Power Players: Why did Trump want Jensen Huang back at Nvidia?",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8gmb",
+          "date": "Wed, 25 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ppyl03.mp3"
         },
         {
-          "title": "Follow the Money: Who pays for the AI boom now?",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8grt",
-          "date": "Mon, 16 Nov 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pn9b1m.mp3"
+          "title": "Founders: How Whatnot built a live shopping giant",
+          "link": "http://www.bbc.co.uk/programmes/w3ct98sy",
+          "date": "Tue, 24 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pppbbh.mp3"
         },
         {
-          "title": "Bringing baseball to Europe",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8ggs",
-          "date": "Sun, 15 Nov 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmxz5c.mp3"
+          "title": "Follow the Money: Where did Trump's tariff refunds go?",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8grv",
+          "date": "Mon, 23 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ppgczr.mp3"
         },
         {
-          "title": "Power Players: What did Trump and the White House know about Nvidia?",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8gby",
-          "date": "Fri, 13 Nov 2026 16:00:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmx48g.mp3"
+          "title": "Can Chile turn methane into money?",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8ggt",
+          "date": "Sun, 22 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ppf6j7.mp3"
         },
         {
-          "title": "Taking Stock: The downfall of Nvidia's Jensen Huang",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8gb7",
-          "date": "Thu, 12 Nov 2026 21:00:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmq99n.mp3"
+          "title": "Recommending... Inheritance: Fiat",
+          "link": "http://www.bbc.co.uk/programmes/p0pn7sxd",
+          "date": "Sun, 22 Nov 2026 00:01:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pn7s86.mp3"
         },
         {
-          "title": "Power Players: Nvidia and the spy scandal",
-          "link": "http://www.bbc.co.uk/programmes/w3ct8gm8",
-          "date": "Wed, 11 Nov 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmjb9c.mp3"
+          "title": "Power Players: Licence to Bill - James Bond, Robert Pattinson & Amazon Money",
+          "link": "http://www.bbc.co.uk/programmes/p0pp576b",
+          "date": "Fri, 20 Nov 2026 20:00:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pp56dw.mp3"
         },
         {
-          "title": "Founders: Moving to Kenya and building a fashion business",
-          "link": "http://www.bbc.co.uk/programmes/w3ct98sw",
-          "date": "Tue, 10 Nov 2026 21:30:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm9jpz.mp3"
+          "title": "Taking stock: Nvidia, Anthropic’s IPO and the launch of GTA",
+          "link": "http://www.bbc.co.uk/programmes/w3ct8gb8",
+          "date": "Thu, 19 Nov 2026 21:30:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnwmpx.mp3"
         }
-      ],
-      "stale": true
+      ]
     },
     {
       "id": "ft-bilingual",
@@ -175,51 +173,51 @@
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
         {
-          "title": "顶住双重压力 达势股份借新店扩张实现增长",
-          "link": "https://www.ftchinese.com/story/19e4e3bb-1d9c-4e01-9090-19f05a1a8a1d",
-          "date": "Wed, 25 Nov 2026 16:00:00 GMT",
+          "title": "加密货币热潮降温 云锋金融缩减虚拟资产投入",
+          "link": "https://www.ftchinese.com/story/42a09e1f-cf12-4cda-9117-1fbff2041506",
+          "date": "Thu, 26 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "AI泡沫破裂之际　亿都交出亮眼转型成绩",
-          "link": "https://www.ftchinese.com/story/03d86fff-81d4-416a-8b5f-b81fe0c15aec",
-          "date": "Wed, 25 Nov 2026 16:00:00 GMT",
+          "title": "气候大会越来越难出成果，我们还需要它吗？专访绿色和平姚喆",
+          "link": "https://www.ftchinese.com/story/ee9b23a4-d261-41b3-bc1c-37a3fabf85e8",
+          "date": "Thu, 26 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "英国移民新规与工地的中文涂鸦",
-          "link": "https://www.ftchinese.com/story/588fc634-8e29-491d-b60d-3ecd5c05052a",
-          "date": "Wed, 25 Nov 2026 16:00:00 GMT",
+          "title": "一杯红茶里的帝国棋局",
+          "link": "https://www.ftchinese.com/story/efcffd1f-40a1-4fe6-8885-307dedbbb6cc",
+          "date": "Thu, 26 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "中国养老金的幸福与痛苦",
-          "link": "https://www.ftchinese.com/story/a064a530-0a80-49ce-b28f-0bd6118e4f63",
-          "date": "Wed, 25 Nov 2026 16:00:00 GMT",
+          "title": "从英国福利改革中，我重新学会读新闻",
+          "link": "https://www.ftchinese.com/story/ec09e59d-6596-4575-a35c-bc704dc582f3",
+          "date": "Thu, 26 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "放学后的账谁来付？",
-          "link": "https://www.ftchinese.com/story/4ef1fca0-ec8a-4a1b-8a21-4d97763a34be",
-          "date": "Wed, 25 Nov 2026 16:00:00 GMT",
+          "title": "新北市长选战：蓝营强攻火药味越来越猛",
+          "link": "https://www.ftchinese.com/story/2418b4e6-97c4-4c09-84d7-e918284e5712",
+          "date": "Thu, 26 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "专访清华大学蒙克：AI时代，“做自己喜欢的事”为什么不再是一句“鸡汤”？",
-          "link": "https://www.ftchinese.com/story/df786819-2c28-4e17-84da-76f9333d72b7",
-          "date": "Wed, 25 Nov 2026 16:00:00 GMT",
+          "title": "肖恩·斯库利：他为何如此重要？",
+          "link": "https://www.ftchinese.com/story/cae656ee-1f4e-4deb-82cd-4f716c52fdba",
+          "date": "Thu, 26 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "和誉医药首款自研药在美获批，首笔销售将触发2,000万美元付款",
-          "link": "https://www.ftchinese.com/story/2623230e-d4a2-4512-99c0-b6758320b253",
-          "date": "Tue, 24 Nov 2026 16:00:00 GMT",
+          "title": "从“汇聚”到“迁徙”：回望“全球化”的古典时代",
+          "link": "https://www.ftchinese.com/story/0848cf5f-69fc-41a7-9e34-f91cb2de6fc6",
+          "date": "Thu, 26 Nov 2026 16:00:00 GMT",
           "audio": ""
         },
         {
-          "title": "转转传赴港筹5亿美元，身价还看盈利成色",
-          "link": "https://www.ftchinese.com/story/200371cd-a575-440a-85c1-b1a4e6a9e69e",
-          "date": "Tue, 24 Nov 2026 16:00:00 GMT",
+          "title": "一家中国律所和它耕耘十年的艺术中心",
+          "link": "https://www.ftchinese.com/story/2c91e256-8b57-46c6-affe-ceb643fa73b2",
+          "date": "Thu, 26 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
       ]
