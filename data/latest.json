@@ -1,12 +1,24 @@
 {
-  "updated": "2026-11-27T08:59:45.361600+00:00",
-  "partial": false,
+  "updated": "2026-11-28T08:22:09.821086+00:00",
+  "partial": true,
   "feeds": [
     {
       "id": "bbc-globalnews",
       "name": "BBC Global News Podcast",
       "url": "https://downloads.bbc.co.uk/podcasts/worldservice/globalnews/rss.xml",
       "items": [
+        {
+          "title": "US asks Mexicans to contact cartel tip line",
+          "link": "http://www.bbc.co.uk/programmes/p0pqbs0c",
+          "date": "Sat, 28 Nov 2026 04:16:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pqbrz8.mp3"
+        },
+        {
+          "title": "Can Pedro Sanchez hold on to Spain?",
+          "link": "http://www.bbc.co.uk/programmes/p0pq8vbc",
+          "date": "Fri, 27 Nov 2026 16:13:00 +0000",
+          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pq8rz2.mp3"
+        },
         {
           "title": "President Zelensky voices his frustration with the US",
           "link": "http://www.bbc.co.uk/programmes/p0pq5lhm",
@@ -42,18 +54,6 @@
           "link": "http://www.bbc.co.uk/programmes/p0ppp111",
           "date": "Tue, 24 Nov 2026 16:47:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ppnzlx.mp3"
-        },
-        {
-          "title": "Stock markets jump after Nvidia boss reinstated",
-          "link": "http://www.bbc.co.uk/programmes/p0ppkqn5",
-          "date": "Tue, 24 Nov 2026 05:48:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ppkq65.mp3"
-        },
-        {
-          "title": "Jensen Huang reinstated as Nvidia CEO",
-          "link": "http://www.bbc.co.uk/programmes/p0pphgd5",
-          "date": "Mon, 23 Nov 2026 16:08:00 +0000",
-          "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pphdx7.mp3"
         }
       ]
     },
@@ -165,13 +165,20 @@
           "date": "Thu, 19 Nov 2026 21:30:00 +0000",
           "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pnwmpx.mp3"
         }
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "ft-bilingual",
       "name": "FT中文网 · 双语阅读",
       "url": "https://www.ftchinese.com/rss/feed",
       "items": [
+        {
+          "title": "台湾选举决战双北",
+          "link": "https://www.ftchinese.com/story/aa353248-5644-41cc-b8d9-0a8eceb84e71",
+          "date": "Thu, 26 Nov 2026 16:00:00 GMT",
+          "audio": ""
+        },
         {
           "title": "加密货币热潮降温 云锋金融缩减虚拟资产投入",
           "link": "https://www.ftchinese.com/story/42a09e1f-cf12-4cda-9117-1fbff2041506",
@@ -211,12 +218,6 @@
         {
           "title": "从“汇聚”到“迁徙”：回望“全球化”的古典时代",
           "link": "https://www.ftchinese.com/story/0848cf5f-69fc-41a7-9e34-f91cb2de6fc6",
-          "date": "Thu, 26 Nov 2026 16:00:00 GMT",
-          "audio": ""
-        },
-        {
-          "title": "一家中国律所和它耕耘十年的艺术中心",
-          "link": "https://www.ftchinese.com/story/2c91e256-8b57-46c6-affe-ceb643fa73b2",
           "date": "Thu, 26 Nov 2026 16:00:00 GMT",
           "audio": ""
         }
